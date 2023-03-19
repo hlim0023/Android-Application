@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -82,9 +83,8 @@ public class CalendarView extends AppCompatActivity implements  CalendarAdapter.
 
     @Override
     public void onItemClick(int position, String dayText) {
-
-        if(dayText.equals("")){
-            String message = "Selected Date" + dayText + " " + monthYearFromDate(selectedDate);
+        if(!dayText.equals("")){
+            String message = "Selected Date " + dayText + " " + monthYearFromDate(selectedDate);
             Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         }
 
