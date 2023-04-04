@@ -57,9 +57,9 @@ public class WeekViewActivity extends AppCompatActivity implements  CalendarAdap
     }
 
     @Override
-    public void onItemClick(int position, String dayText) {
-        String message = "Selected Date " + dayText + " " + monthYearFromDate(CalendarUtils.selectedDate);
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    public void onItemClick(int position, LocalDate date) {
+        CalendarUtils.selectedDate = date;
+        setWeekView();
 
     }
 }
