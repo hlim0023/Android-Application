@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
                     Toast.makeText(getApplicationContext(), "Hi, "+ username.getText().toString() + ". Welcome back.", Toast.LENGTH_LONG).show();
                     //Toast is to display the msg like pop up window
-                    Intent intent = new Intent(MainActivity.this, HomeScreen.class);
+                    Intent intent = new Intent(MainActivity.this, CalendarView.class);
                     startActivity(intent);
                 }
                 else{
@@ -42,7 +42,9 @@ public class MainActivity extends AppCompatActivity {
                         if (username.getText().toString().equals(names.get(i))&& password.getText().toString().equals(codes.get(i))){
                             Toast.makeText(getApplicationContext(), "Hi, "+ username.getText().toString() + "Welcome back.", Toast.LENGTH_LONG).show();
                             //Toast is to display the msg like pop up window
-                            Intent intent = new Intent(MainActivity.this, HomeScreen.class);
+                            //Intent intent = new Intent(MainActivity.this, HomeScreen.class);
+                            //Changed Intent to calendar
+                            Intent intent = new Intent(MainActivity.this, CalendarView.class);
                             startActivity(intent);
                             break;
                         }
