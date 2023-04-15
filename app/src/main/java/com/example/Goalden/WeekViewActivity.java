@@ -85,4 +85,8 @@ public class WeekViewActivity extends AppCompatActivity implements  CalendarAdap
     public void dailyAction(View view) {
         startActivity(new Intent(this, DailyCalendarActivity.class));
     }
+
+    public void finishAction(View view) {
+        finish();
+    }
 }

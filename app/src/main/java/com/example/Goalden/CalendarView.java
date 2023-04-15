@@ -77,4 +77,8 @@ public class CalendarView extends AppCompatActivity implements  CalendarAdapter.
 
     public void previousWeekAction(View view) {
     }
+
+    public void finishAction(View view) {
+        finish();
+    }
 }

@@ -75,11 +75,10 @@ public class MainActivity extends AppCompatActivity {
                                 // TODO: FIX this to fragment
                                 Intent intent = new Intent(MainActivity.this, CalendarView.class);
                                 startActivity(intent);
-//                                replaceFragment(new CalendarFragment());
                                 break;
                         }
 
-                        return true;
+                        return false;
 
                     });
 //                    Intent intent = new Intent(MainActivity.this, HomeScreen.class);
