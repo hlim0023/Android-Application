@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-mergeDebugResources-32:/layout/home_activity.xml",
+        "source": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-main-35:/layout/home_activity.xml"
+    },
+    {
+        "merged": "com.example.Goalden.app-mergeDebugResources-32:/layout/home_activity.xml",
+        "source": "com.example.Goalden.app-main-35:/layout/home_activity.xml"
+    },
+    {
+        "merged": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-mergeDebugResources-32:/layout/activity_calendar_view.xml",
+        "source": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-main-35:/layout/activity_calendar_view.xml"
+    },
+    {
+        "merged": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-mergeDebugResources-32:/layout/fragment_home.xml",
+        "source": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-main-35:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-mergeDebugResources-32:/layout/calender_cell.xml",
+        "source": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-main-35:/layout/calender_cell.xml"
+    },
+    {
+        "merged": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-mergeDebugResources-32:/layout/fragment_tasks.xml",
+        "source": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-main-35:/layout/fragment_tasks.xml"
+    },
+    {
+        "merged": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-mergeDebugResources-32:/layout/login.xml",
+        "source": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-main-35:/layout/login.xml"
+    },
+    {
+        "merged": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-mergeDebugResources-32:/layout/activity_week_view.xml",
+        "source": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-main-35:/layout/activity_week_view.xml"
+    },
+    {
+        "merged": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-mergeDebugResources-32:/layout/fragment_profile.xml",
+        "source": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-main-35:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-mergeDebugResources-32:/layout/fragment_calendar.xml",
+        "source": "/Users/lin/.gradle/daemon/7.4/com.example.Goalden.app-main-35:/layout/fragment_calendar.xml"
+    }
+]

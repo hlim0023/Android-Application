@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "591020986556",
+    "project_id": "fit3162-2023s1-goalden-28975",
+    "storage_bucket": "fit3162-2023s1-goalden-28975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591020986556:android:98a58d690af870d73540b9",
+        "android_client_info": {
+          "package_name": "com.example.Goalden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591020986556-degrmc59nnc2mjj179e2r52n8593j973.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0SJzd3LoFxssvRaV1lQscM8Itn-j-2rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591020986556-degrmc59nnc2mjj179e2r52n8593j973.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
