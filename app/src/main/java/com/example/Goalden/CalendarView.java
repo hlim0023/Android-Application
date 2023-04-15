@@ -59,6 +59,11 @@ public class CalendarView extends AppCompatActivity implements  CalendarAdapter.
         setMonthView();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setMonthView();
+    }
 
     @Override
     public void onItemClick(int position, LocalDate date) {
