@@ -2764,6 +2764,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id anyChartView
 id arc
 id asConfigured
 id async
@@ -2887,6 +2888,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragment_container
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3180,6 +3182,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id web_view
 id west
 id wide
 id withText
@@ -3396,6 +3399,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout view_anychart
 menu bottom_bar
 mipmap ic_launcher
 mipmap ic_launcher_round

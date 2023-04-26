@@ -25,16 +25,20 @@ public final class HomeActivityBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
+  public final FrameLayout fragmentContainer;
+
+  @NonNull
   public final FrameLayout homeLayoutFrame;
 
   @NonNull
   public final TextView textView;
 
   private HomeActivityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull FrameLayout homeLayoutFrame,
-      @NonNull TextView textView) {
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull FrameLayout fragmentContainer,
+      @NonNull FrameLayout homeLayoutFrame, @NonNull TextView textView) {
     this.rootView = rootView;
     this.bottomNavigationView = bottomNavigationView;
+    this.fragmentContainer = fragmentContainer;
     this.homeLayoutFrame = homeLayoutFrame;
     this.textView = textView;
   }
@@ -72,6 +76,12 @@ public final class HomeActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fragment_container;
+      FrameLayout fragmentContainer = ViewBindings.findChildViewById(rootView, id);
+      if (fragmentContainer == null) {
+        break missingId;
+      }
+
       id = R.id.home_layout_frame;
       FrameLayout homeLayoutFrame = ViewBindings.findChildViewById(rootView, id);
       if (homeLayoutFrame == null) {
@@ -85,7 +95,7 @@ public final class HomeActivityBinding implements ViewBinding {
       }
 
       return new HomeActivityBinding((ConstraintLayout) rootView, bottomNavigationView,
-          homeLayoutFrame, textView);
+          fragmentContainer, homeLayoutFrame, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

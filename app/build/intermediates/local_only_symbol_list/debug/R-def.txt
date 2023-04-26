@@ -14,6 +14,7 @@ drawable ic_baseline_person_24
 drawable ic_baseline_task_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id anyChartView
 id bottomNavigationView
 id button
 id button2
@@ -22,6 +23,7 @@ id calendar_frame
 id calendar_item
 id cellDayText
 id editTextTextPassword
+id fragment_container
 id guideline14
 id guideline15
 id guideline16

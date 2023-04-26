@@ -8,12 +8,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.anychart.AnyChart;
+import com.anychart.AnyChartView;
+import com.anychart.chart.common.dataentry.DataEntry;
+import com.anychart.chart.common.dataentry.ValueDataEntry;
+import com.anychart.charts.Pie;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HomeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+
+    //todo: link user
+    AnyChartView anyChartView;
+    String[] placeholders1 = {"1,2,3,4"};
+    int[] placeholders2 = {1,2,3,4};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -53,12 +67,33 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // Find the AnyChartView in the inflated layout
+        anyChartView = rootView.findViewById(R.id.anyChartView);
+
+        // Call the setupChartView() method to set up the chart view
+        setupChartView();
+
+        return rootView;
+    }
+
+
+    private void setupChartView() {
+        Pie pie = AnyChart.pie();
+        List<DataEntry> dataEntries = new ArrayList<>();
+
+        for (int i=0; i<placeholders1.length; i++){
+            dataEntries.add(new ValueDataEntry(placeholders1[i],placeholders2[i]));
+        }
+        pie.data(dataEntries);
+        pie.title("Activities");
+        anyChartView.setChart(pie);
     }
 }
