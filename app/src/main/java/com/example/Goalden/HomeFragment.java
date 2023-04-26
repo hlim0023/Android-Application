@@ -26,8 +26,8 @@ public class HomeFragment extends Fragment {
 
     //todo: link user
     AnyChartView anyChartView;
-    String[] placeholders1 = {"1,2,3,4"};
-    int[] placeholders2 = {1,2,3,4};
+    String[] placeholders1 = {"1","2","3","4"};
+    int[] placeholders2 = {2000,1000,5000,4000};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

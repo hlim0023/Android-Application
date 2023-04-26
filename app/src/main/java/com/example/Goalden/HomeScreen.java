@@ -26,17 +26,19 @@ public class HomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
 
-        // Create an instance of HomeFragment
+        // Get the fragment manager
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        // Begin the fragment transaction
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        // Create a new instance of HomeFragment
         HomeFragment homeFragment = new HomeFragment();
 
-        // Add HomeFragment to the fragment_container
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.fragment_container, homeFragment)
-                .commit();
+        // Add the fragment to the fragment container
+        fragmentTransaction.add(R.id.fragment_container, homeFragment);
 
-
+        // Commit the transaction
+        fragmentTransaction.commit();
     }
-
-
-
 }
