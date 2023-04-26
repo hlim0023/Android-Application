@@ -36,7 +36,7 @@ public class HomeScreen extends AppCompatActivity {
         HomeFragment homeFragment = new HomeFragment();
 
         // Add the fragment to the fragment container
-        fragmentTransaction.add(R.id.fragment_container, homeFragment);
+        fragmentTransaction.add(R.id.home_layout_frame, homeFragment);
 
         // Commit the transaction
         fragmentTransaction.commit();

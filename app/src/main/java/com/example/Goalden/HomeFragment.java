@@ -24,10 +24,10 @@ import java.util.List;
  */
 public class HomeFragment extends Fragment {
 
-    //todo: link user
+    //todo: link user's data
     AnyChartView anyChartView;
     String[] placeholders1 = {"1","2","3","4"};
-    int[] placeholders2 = {2000,1000,5000,4000};
+    int[] placeholders2 = {20000,10000,50000,40000};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
