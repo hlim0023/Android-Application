@@ -42,10 +42,11 @@ public class Activity {
     private String description;
     private ActivityType type;
 
-    public Activity(String name, LocalTime time, LocalDate date) {
+    public Activity(String name, LocalTime time, LocalDate date, ActivityType type) {
         this.name = name;
         this.time = time;
         this.date = date;
+        this.type = type;
     }
 
     public String getName() {

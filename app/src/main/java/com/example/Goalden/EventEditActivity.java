@@ -7,14 +7,20 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import java.lang.reflect.Field;
 import java.text.DateFormatSymbols;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -22,6 +28,8 @@ public class EventEditActivity extends AppCompatActivity {
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
     private Button timeButton;
+
+    private Spinner mySpinner;
 
     int hour, minute;
     private EditText eventNameET;
@@ -39,7 +47,12 @@ public class EventEditActivity extends AppCompatActivity {
 
         timeButton = findViewById(R.id.timeButton);
 
+        LocalTime currentTime = LocalTime.now();
+        timeButton.setText(String.format(Locale.getDefault(), "%02d:%02d", currentTime.getHour(), currentTime.getMinute()));
+
         initWidgets();
+
+        initCategoryPicker();
     }
 
     private String displaySelectedDate() {
@@ -71,6 +84,19 @@ public class EventEditActivity extends AppCompatActivity {
         datePickerDialog = new DatePickerDialog(this, style, dateSetListener, year, month, day);
     }
 
+    private void initCategoryPicker(){
+        mySpinner = findViewById(R.id.my_spinner);
+        String[] options = new String[ActivityType.values().length];
+
+        for(int i = 0; i < ActivityType.values().length; i++){
+            options[i] = ActivityType.values()[i].toString();
+        }
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, options);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        mySpinner.setAdapter(adapter);
+    }
+
     private String makeDateString(int day, int month, int year) {
         return getMonthFormat(month) + " " + day + " " + year;
     }
@@ -82,7 +108,12 @@ public class EventEditActivity extends AppCompatActivity {
 
     public void saveActivityAction(View view) {
         String activityName = eventNameET.getText().toString();
-        Activity activity = new Activity(activityName, LocalTime.parse(timeButton.getText().toString()), CalendarUtils.toDate(dateButton.getText().toString()));
+        Activity activity = new Activity(
+                activityName,
+                LocalTime.parse(timeButton.getText().toString()),
+                CalendarUtils.toDate(dateButton.getText().toString()),
+                ActivityType.valueOf(mySpinner.getSelectedItem().toString())
+        );
         Activity.activitiesList.add(activity);
         finish();
     }
@@ -103,9 +134,10 @@ public class EventEditActivity extends AppCompatActivity {
 
         int style = AlertDialog.THEME_HOLO_LIGHT;
 
-        TimePickerDialog timePickerDialog = new TimePickerDialog(this, style, onTimeSetListener, hour, minute, true);
-
-        timePickerDialog.setTitle("Select Time");
+        LocalTime currentTime = LocalTime.now();
+        TimePickerDialog timePickerDialog = new TimePickerDialog(this, style, onTimeSetListener, currentTime.getHour(), currentTime.getMinute(), true);
+        //timeButton.setText(String.format(Locale.getDefault(), "%02d:%02d", hour, minute));
+        //timePickerDialog.setTitle(String.format(Locale.getDefault(), "%02d:%02d", hour, minute));
         timePickerDialog.show();
     }
 }
