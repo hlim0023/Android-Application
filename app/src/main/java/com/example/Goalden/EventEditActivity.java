@@ -15,6 +15,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.lang.reflect.Field;
 import java.text.DateFormatSymbols;
 import java.time.LocalDate;
@@ -33,6 +36,7 @@ public class EventEditActivity extends AppCompatActivity {
 
     int hour, minute;
     private EditText eventNameET;
+    DatabaseReference myRef;
 
 
     @Override
@@ -40,6 +44,7 @@ public class EventEditActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_edit);
 
+        myRef = FirebaseDatabase.getInstance().getReference().child("login/users").child(UserInfo.loggedUser.getUserId());
 
         initDatePicker();
         dateButton = findViewById(R.id.datePickerButton);
@@ -98,7 +103,7 @@ public class EventEditActivity extends AppCompatActivity {
     }
 
     private String makeDateString(int day, int month, int year) {
-        return getMonthFormat(month) + " " + day + " " + year;
+        return getMonthFormat(month) + " " + String.format("%02d", day) + " " + year;
     }
 
     private String getMonthFormat(int month) {
@@ -108,13 +113,18 @@ public class EventEditActivity extends AppCompatActivity {
 
     public void saveActivityAction(View view) {
         String activityName = eventNameET.getText().toString();
-        Activity activity = new Activity(
-                activityName,
-                LocalTime.parse(timeButton.getText().toString()),
-                CalendarUtils.toDate(dateButton.getText().toString()),
-                ActivityType.valueOf(mySpinner.getSelectedItem().toString())
-        );
-        Activity.activitiesList.add(activity);
+//        Activity activity = new Activity(
+//                activityName,
+//                LocalTime.parse(timeButton.getText().toString()),
+//                CalendarUtils.toDate(dateButton.getText().toString()),
+//                ActivityType.valueOf(mySpinner.getSelectedItem().toString())
+//        );
+        String activityKey = myRef.child("activities").push().getKey();
+        DatabaseReference act = myRef.child("activities").child(activityKey);
+        act.child("activityName").setValue(activityName);
+        act.child("activityTime").setValue(timeButton.getText().toString());
+        act.child("activityDate").setValue(dateButton.getText().toString());
+        act.child("activityCategory").setValue(mySpinner.getSelectedItem().toString());
         finish();
     }
 

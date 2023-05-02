@@ -6,12 +6,12 @@ import java.util.ArrayList;
 
 public class Activity {
 
-    public static ArrayList<Activity> activitiesList = new ArrayList<>();
+    //public static ArrayList<Activity> activitiesList = new ArrayList<>();
 
     public static ArrayList<Activity> activitiesForDate(LocalDate date){
         ArrayList<Activity> activities = new ArrayList<>();
 
-        for(Activity activity: activitiesList){
+        for(Activity activity: UserInfo.loggedUser.getActivities()){
             if(activity.getDate().equals(date)){
                 activities.add(activity);
             }
@@ -23,7 +23,7 @@ public class Activity {
     public static ArrayList<Activity> activitiesForDateAndTime(LocalDate date, LocalTime time){
         ArrayList<Activity> activities = new ArrayList<>();
 
-        for(Activity activity: activitiesList){
+        for(Activity activity: UserInfo.loggedUser.getActivities()){
 
             int eventHour = activity.getTime().getHour();
             int cellHour = time.getHour();
