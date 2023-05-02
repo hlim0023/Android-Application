@@ -133,13 +133,16 @@ public class MainActivity extends AppCompatActivity {
         signButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String userId = mCondition.push().getKey();
-                UserInfo user = new UserInfo(userId, username.getText().toString(), password.getText().toString());
-                mCondition.child(userId).setValue(user);
-                String activityKey = mCondition.child(userId).child("activities").push().getKey();
+                if(UserInfo.findUserInfoByName(username.getText().toString()) == null) {
+                    String userId = mCondition.push().getKey();
+                    UserInfo user = new UserInfo(userId, username.getText().toString(), password.getText().toString());
+                    mCondition.child(userId).setValue(user);
+                    return;
 //                mCondition.child(userId).child("activities").setValue("test");
 //                mCondition.child(userId).child("activities").setValue(Activity)
 //                mCondition.removeValue();
+                }
+                Toast.makeText(getApplicationContext(), "Username already exist", Toast.LENGTH_LONG).show();
             }
             });
 

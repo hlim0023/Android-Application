@@ -64,6 +64,14 @@ public class UserInfo {
         this.activities = activities;
     }
 
+    public static UserInfo findUserInfoByName(String username){
+        for(UserInfo userInfo: users){
+            if(userInfo.userName.toLowerCase().equals(username.toLowerCase()))
+                return userInfo;
+        }
+        return null;
+    }
+
     @NonNull
     @Override
     public String toString() {
