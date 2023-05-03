@@ -16,6 +16,12 @@
         tools:ignore="MissingClass"
         tools:replace="android:label">
         <activity
+            android:name=".DailyCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventEditActivity"
+            android:exported="false" />
+        <activity
             android:name=".WeekViewActivity"
             android:exported="false" />
         <activity

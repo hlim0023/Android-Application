@@ -40,7 +40,7 @@ public class CalendarView extends AppCompatActivity implements  CalendarAdapter.
 
     private void setMonthView() {
         monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));
-        ArrayList<LocalDate> daysInMonth = daysInMonthArray(CalendarUtils.selectedDate);
+        ArrayList<LocalDate> daysInMonth = daysInMonthArray();
 
         CalendarAdapter calendarAdapter = new CalendarAdapter(daysInMonth, this);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);
@@ -59,6 +59,11 @@ public class CalendarView extends AppCompatActivity implements  CalendarAdapter.
         setMonthView();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setMonthView();
+    }
 
     @Override
     public void onItemClick(int position, LocalDate date) {
@@ -76,5 +81,9 @@ public class CalendarView extends AppCompatActivity implements  CalendarAdapter.
     }
 
     public void previousWeekAction(View view) {
+    }
+
+    public void finishAction(View view) {
+        finish();
     }
 }
