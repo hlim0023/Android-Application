@@ -2888,7 +2888,6 @@ id fixed
 id flip
 id floating
 id forever
-id fragment_container
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3402,6 +3401,7 @@ layout support_simple_spinner_dropdown_item
 layout view_anychart
 menu bottom_bar
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep

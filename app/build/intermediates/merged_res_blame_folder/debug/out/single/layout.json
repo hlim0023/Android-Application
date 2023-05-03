@@ -1,42 +1,42 @@
 [
     {
-        "merged": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.example.Goalden.app-mergeDebugResources-33:/layout/home_activity.xml",
-        "source": "com.example.Goalden.app-main-36:/layout/home_activity.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\fragment_tasks.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\fragment_tasks.xml"
     },
     {
-        "merged": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\activity_calendar_view.xml",
-        "source": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\activity_calendar_view.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\activity_week_view.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\activity_week_view.xml"
     },
     {
-        "merged": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\activity_week_view.xml",
-        "source": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\activity_week_view.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\login.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\login.xml"
     },
     {
-        "merged": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\fragment_calendar.xml",
-        "source": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\fragment_calendar.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\home_activity.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\home_activity.xml"
     },
     {
-        "merged": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\fragment_tasks.xml",
-        "source": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\fragment_tasks.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\activity_calendar_view.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\activity_calendar_view.xml"
     },
     {
-        "merged": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\home_activity.xml",
-        "source": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\home_activity.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\fragment_calendar.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\fragment_calendar.xml"
     },
     {
-        "merged": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\login.xml",
-        "source": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\login.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\calender_cell.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\calender_cell.xml"
     },
     {
-        "merged": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-33:\\layout\\calender_cell.xml",
-        "source": "C:\\Users\\baiyan\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\layout\\calender_cell.xml"
+        "merged": "com.example.Goalden.app-mergeDebugResources-33:/layout/login.xml",
+        "source": "com.example.Goalden.app-main-36:/layout/login.xml"
     }
 ]

@@ -23,7 +23,6 @@ id calendar_frame
 id calendar_item
 id cellDayText
 id editTextTextPassword
-id fragment_container
 id guideline14
 id guideline15
 id guideline16
@@ -54,6 +53,7 @@ layout home_activity
 layout login
 menu bottom_bar
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string app_name
 string backward

@@ -98,11 +98,11 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         if (i == names.size()-1){
-                            Toast.makeText(getApplicationContext(), "Wrong Password or user name, please try again !", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Wrong Username or Password, please try again!", Toast.LENGTH_SHORT).show();
                         }
                     }
                     if (names.size() == 0){
-                        Toast.makeText(getApplicationContext(), "Wrong Password or user name, please try again !", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Wrong Username or Password, please try again!", Toast.LENGTH_SHORT).show();
                     }
                 }
 
