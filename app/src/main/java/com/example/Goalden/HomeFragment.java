@@ -4,7 +4,8 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-
+import androidx.fragment.app.FragmentTransaction;
+import com.example.Goalden.CategoryDetailFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,18 +17,16 @@ import com.anychart.chart.common.dataentry.ValueDataEntry;
 import com.anychart.charts.Pie;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
+import com.github.mikephil.charting.highlight.Highlight;
+import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class HomeFragment extends Fragment {
     PieChart pieChart;
 
@@ -61,6 +60,7 @@ public class HomeFragment extends Fragment {
         entries.add(new PieEntry(20f, "Committed Action"));
 
         PieDataSet dataSet = new PieDataSet(entries, "");
+        String[] categories = {"Acceptance", "Cognitive Defusion", "Being Present", "Self as Context", "Values", "Committed Action"};
 
         // Define custom colors for the pie chart
         int[] customColors = {
@@ -102,6 +102,31 @@ public class HomeFragment extends Fragment {
         legend.setYOffset(0f);
         legend.setTypeface(typeface);
         legend.setTextSize(14f);
+        // Set a listener for when a value is selected
+        pieChart.setOnChartValueSelectedListener(new OnChartValueSelectedListener() {
+            @Override
+            public void onValueSelected(Entry e, Highlight h) {
+                int index = (int) h.getX();
+                String category = categories[index];
+                openCategoryDetailFragment(category);
+            }
+
+            @Override
+            public void onNothingSelected() {
+                // Do nothing when nothing is selected
+            }
+        });
+
+    }
+
+    private void openCategoryDetailFragment(String category) {
+        CategoryDetailFragment categoryDetailFragment = CategoryDetailFragment.newInstance(category);
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
+        transaction.replace(R.id.home_layout_frame, categoryDetailFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
     }
 }
 
