@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -27,16 +26,11 @@ public final class HomeActivityBinding implements ViewBinding {
   @NonNull
   public final FrameLayout homeLayoutFrame;
 
-  @NonNull
-  public final TextView textView;
-
   private HomeActivityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull FrameLayout homeLayoutFrame,
-      @NonNull TextView textView) {
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull FrameLayout homeLayoutFrame) {
     this.rootView = rootView;
     this.bottomNavigationView = bottomNavigationView;
     this.homeLayoutFrame = homeLayoutFrame;
-    this.textView = textView;
   }
 
   @Override
@@ -78,14 +72,8 @@ public final class HomeActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
-        break missingId;
-      }
-
       return new HomeActivityBinding((ConstraintLayout) rootView, bottomNavigationView,
-          homeLayoutFrame, textView);
+          homeLayoutFrame);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

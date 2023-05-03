@@ -14,7 +14,6 @@ drawable ic_baseline_person_24
 drawable ic_baseline_task_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id anyChartView
 id bottomNavigationView
 id button
 id button2
@@ -34,14 +33,15 @@ id home
 id home_layout_frame
 id monthYearTV
 id parentView
+id pieChart
 id profile
 id tasks
 id textInputEditText
-id textView
 id textView18
 id textView2
 id textView3
 id textView4
+id titleTextView
 layout activity_calendar_view
 layout activity_week_view
 layout calender_cell

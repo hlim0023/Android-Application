@@ -11,6 +11,7 @@ MERGED from [com.github.AnyChart:AnyChart-Android:1.1.2] C:\Users\alext\.gradle\
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\alext\.gradle\caches\transforms-3\bc7170d48744b76223e36d24ed526559\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\alext\.gradle\caches\transforms-3\bcd389171ec3467c775ee8ae8b9b65d8\transformed\appcompat-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:15:1-37:12
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\alext\.gradle\caches\transforms-3\ecf06f8a860f230ac4247214f1770083\transformed\jetified-MPAndroidChart-v3.1.0\AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\alext\.gradle\caches\transforms-3\344ddc8609bd877ae238600988fe63a2\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\alext\.gradle\caches\transforms-3\44a628cbbe30558dcaf6a42656df0c86\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\alext\.gradle\caches\transforms-3\85075a7be7b9004fea2218caee63db05\transformed\jetified-firebase-appcheck-interop-16.1.0\AndroidManifest.xml:15:1-25:12
@@ -194,6 +195,8 @@ MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\alext\.gradle\caches\t
 MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\alext\.gradle\caches\transforms-3\bcd389171ec3467c775ee8ae8b9b65d8\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\alext\.gradle\caches\transforms-3\ecf06f8a860f230ac4247214f1770083\transformed\jetified-MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\alext\.gradle\caches\transforms-3\ecf06f8a860f230ac4247214f1770083\transformed\jetified-MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\alext\.gradle\caches\transforms-3\344ddc8609bd877ae238600988fe63a2\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\alext\.gradle\caches\transforms-3\344ddc8609bd877ae238600988fe63a2\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\alext\.gradle\caches\transforms-3\44a628cbbe30558dcaf6a42656df0c86\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41

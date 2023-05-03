@@ -148,16 +148,16 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "com.example.Goalden.app-merged_res-34:/layout_fragment_home.xml.flat",
+        "source": "com.example.Goalden.app-main-36:/layout/fragment_home.xml"
+    },
+    {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-34:\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-34:\\drawable_ic_baseline_person_24.xml.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-36:\\drawable\\ic_baseline_person_24.xml"
-    },
-    {
-        "merged": "com.example.Goalden.app-merged_res-34:/layout_login.xml.flat",
-        "source": "com.example.Goalden.app-main-36:/layout/login.xml"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-34:\\xml_data_extraction_rules.xml.flat",

@@ -2763,7 +2763,6 @@ int id animateToEnd 0x7f08004e
 int id animateToStart 0x7f08004f
 int id antiClockwise 0x7f080050
 int id anticipate 0x7f080051
-int id anyChartView 0x7f080052
 int id arc 0x7f080053
 int id asConfigured 0x7f080054
 int id async 0x7f080055
@@ -3035,6 +3034,7 @@ int id path 0x7f08015e
 int id pathRelative 0x7f08015f
 int id peekHeight 0x7f080160
 int id percent 0x7f080161
+int id pieChart 0x7f0801fe
 int id pin 0x7f080162
 int id position 0x7f080163
 int id postLayout 0x7f080164
@@ -3136,7 +3136,6 @@ int id textSpacerNoButtons 0x7f0801c3
 int id textSpacerNoTitle 0x7f0801c4
 int id textStart 0x7f0801c5
 int id textTop 0x7f0801c6
-int id textView 0x7f0801c7
 int id textView18 0x7f0801c8
 int id textView2 0x7f0801c9
 int id textView3 0x7f0801ca
@@ -3153,6 +3152,7 @@ int id textinput_suffix_text 0x7f0801d4
 int id time 0x7f0801d5
 int id title 0x7f0801d6
 int id titleDividerNoCustom 0x7f0801d7
+int id titleTextView 0x7f0801ff
 int id title_template 0x7f0801d8
 int id toggle 0x7f0801d9
 int id top 0x7f0801da

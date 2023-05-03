@@ -4,32 +4,38 @@ package com.example.Goalden.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.anychart.AnyChartView;
 import com.example.Goalden.R;
+import com.github.mikephil.charting.charts.PieChart;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final AnyChartView anyChartView;
+  public final PieChart pieChart;
 
-  private FragmentHomeBinding(@NonNull FrameLayout rootView, @NonNull AnyChartView anyChartView) {
+  @NonNull
+  public final TextView titleTextView;
+
+  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull PieChart pieChart,
+      @NonNull TextView titleTextView) {
     this.rootView = rootView;
-    this.anyChartView = anyChartView;
+    this.pieChart = pieChart;
+    this.titleTextView = titleTextView;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -54,13 +60,19 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.anyChartView;
-      AnyChartView anyChartView = ViewBindings.findChildViewById(rootView, id);
-      if (anyChartView == null) {
+      id = R.id.pieChart;
+      PieChart pieChart = ViewBindings.findChildViewById(rootView, id);
+      if (pieChart == null) {
         break missingId;
       }
 
-      return new FragmentHomeBinding((FrameLayout) rootView, anyChartView);
+      id = R.id.titleTextView;
+      TextView titleTextView = ViewBindings.findChildViewById(rootView, id);
+      if (titleTextView == null) {
+        break missingId;
+      }
+
+      return new FragmentHomeBinding((ConstraintLayout) rootView, pieChart, titleTextView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
