@@ -5,13 +5,19 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="29"
-        android:targetSdkVersion="32" />
+        android:minSdkVersion="30"
+        android:targetSdkVersion="33" />
 
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.example.Goalden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.Goalden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="androidx.multidex.MultiDexApplication"
@@ -27,6 +33,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Week2" >
+        <activity
+            android:name="com.example.Goalden.DailyCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Goalden.EventEditActivity"
+            android:exported="false" />
         <activity
             android:name="com.example.Goalden.WeekViewActivity"
             android:exported="false" />
@@ -60,7 +72,13 @@
             android:directBootAware="true"
             android:exported="false" >
             <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 

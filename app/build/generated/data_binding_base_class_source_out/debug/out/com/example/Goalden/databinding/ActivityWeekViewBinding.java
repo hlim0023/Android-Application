@@ -4,7 +4,9 @@ package com.example.Goalden.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,13 +26,22 @@ public final class ActivityWeekViewBinding implements ViewBinding {
   public final RecyclerView calendarRecyclerView;
 
   @NonNull
+  public final ListView eventListView;
+
+  @NonNull
   public final TextView monthYearTV;
 
+  @NonNull
+  public final Button weeklyViewFinishBtn;
+
   private ActivityWeekViewBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView calendarRecyclerView, @NonNull TextView monthYearTV) {
+      @NonNull RecyclerView calendarRecyclerView, @NonNull ListView eventListView,
+      @NonNull TextView monthYearTV, @NonNull Button weeklyViewFinishBtn) {
     this.rootView = rootView;
     this.calendarRecyclerView = calendarRecyclerView;
+    this.eventListView = eventListView;
     this.monthYearTV = monthYearTV;
+    this.weeklyViewFinishBtn = weeklyViewFinishBtn;
   }
 
   @Override
@@ -66,14 +77,26 @@ public final class ActivityWeekViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.eventListView;
+      ListView eventListView = ViewBindings.findChildViewById(rootView, id);
+      if (eventListView == null) {
+        break missingId;
+      }
+
       id = R.id.monthYearTV;
       TextView monthYearTV = ViewBindings.findChildViewById(rootView, id);
       if (monthYearTV == null) {
         break missingId;
       }
 
+      id = R.id.weeklyViewFinishBtn;
+      Button weeklyViewFinishBtn = ViewBindings.findChildViewById(rootView, id);
+      if (weeklyViewFinishBtn == null) {
+        break missingId;
+      }
+
       return new ActivityWeekViewBinding((LinearLayout) rootView, calendarRecyclerView,
-          monthYearTV);
+          eventListView, monthYearTV, weeklyViewFinishBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

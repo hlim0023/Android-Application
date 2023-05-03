@@ -5,163 +5,198 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="29"
+8        android:minSdkVersion="30"
 8-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="32" />
+9        android:targetSdkVersion="33" />
 9-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml
 10
 11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:24:5-79
-13-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:24:22-76
+13-->[com.google.firebase:firebase-database:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\158a90c641845d5e31c5d972cbfb4819\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:24:5-79
+13-->[com.google.firebase:firebase-database:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\158a90c641845d5e31c5d972cbfb4819\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:24:22-76
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:25:5-67
-14-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:25:22-64
+14-->[com.google.firebase:firebase-database:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\158a90c641845d5e31c5d972cbfb4819\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:25:5-67
+14-->[com.google.firebase:firebase-database:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\158a90c641845d5e31c5d972cbfb4819\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:25:22-64
 15
-16    <application
-16-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:5:5-45:19
-17        android:name="androidx.multidex.MultiDexApplication"
-17-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:13:9-61
-18        android:allowBackup="true"
-18-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.8.0] C:\Users\alext\.gradle\caches\transforms-3\ce71ea0e96ba14e5fcac78923d14c5ee\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:9:9-43
-25        android:label="ACT"
-25-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:10:9-28
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:11:9-54
-27        android:supportsRtl="true"
-27-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.Week2" >
-29-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:14:9-43
-30        <activity
-30-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:18:9-20:40
-31            android:name="com.example.Goalden.WeekViewActivity"
-31-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:19:13-45
-32            android:exported="false" />
-32-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:20:13-37
-33        <activity
-33-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:21:9-23:39
-34            android:name="com.example.Goalden.CalendarView"
-34-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:22:13-41
-35            android:exported="true" />
-35-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:23:13-36
+16    <permission
+16-->[androidx.core:core:1.9.0] C:\Users\alext\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+17        android:name="com.example.Goalden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.9.0] C:\Users\alext\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.9.0] C:\Users\alext\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.example.Goalden.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.9.0] C:\Users\alext\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.9.0] C:\Users\alext\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:5:5-51:19
+23        android:name="androidx.multidex.MultiDexApplication"
+23-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:13:9-61
+24        android:allowBackup="true"
+24-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:6:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.9.0] C:\Users\alext\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+26        android:dataExtractionRules="@xml/data_extraction_rules"
+26-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:7:9-65
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:fullBackupContent="@xml/backup_rules"
+29-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:8:9-54
+30        android:icon="@mipmap/ic_launcher"
+30-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:9:9-43
+31        android:label="ACT"
+31-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:10:9-28
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:11:9-54
+33        android:supportsRtl="true"
+33-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:12:9-35
+34        android:testOnly="true"
+35        android:theme="@style/Theme.Week2" >
+35-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:14:9-43
 36        <activity
-36-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:24:9-31:20
-37            android:name="com.example.Goalden.HomeScreen"
-37-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:25:13-39
-38            android:exported="false"
-38-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:26:13-37
-39            android:label="@string/home_name" >
-39-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:27:13-46
-40            <meta-data
-40-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:28:13-30:36
-41                android:name="android.app.lib_name"
-41-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:29:17-52
-42                android:value="" />
-42-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:30:17-33
-43        </activity>
-44        <activity
-44-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:32:9-44:20
-45            android:name="com.example.Goalden.MainActivity"
-45-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:33:13-41
-46            android:exported="true" >
-46-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:34:13-36
-47            <intent-filter>
-47-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:35:13-39:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:36:17-69
-48-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:36:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:38:17-77
-50-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:38:27-74
-51            </intent-filter>
-52
-53            <meta-data
-53-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:28:13-30:36
-54                android:name="android.app.lib_name"
-54-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:29:17-52
-55                android:value="" />
-55-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:30:17-33
-56        </activity>
-57
-58        <service
-58-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
-59            android:name="com.google.firebase.components.ComponentDiscoveryService"
-59-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:29:13-84
-60            android:directBootAware="true"
-60-->[com.google.firebase:firebase-common:20.2.0] C:\Users\alext\.gradle\caches\transforms-3\e5e8b46c42da637d20e5a1aa476ca217\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
-61            android:exported="false" >
-61-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:30:13-37
-62            <meta-data
-62-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
-63                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-63-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:32:17-109
-64                android:value="com.google.firebase.components.ComponentRegistrar" />
-64-->[com.google.firebase:firebase-database:20.1.0] C:\Users\alext\.gradle\caches\transforms-3\3f0ac0a4c06cfc57c8ce27977b7733f1\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:33:17-82
-65        </service>
-66
-67        <activity
-67-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\alext\.gradle\caches\transforms-3\1fcaec14f986e0e71f01f0b3bbd08475\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-68            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-68-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\alext\.gradle\caches\transforms-3\1fcaec14f986e0e71f01f0b3bbd08475\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-69            android:exported="false"
-69-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\alext\.gradle\caches\transforms-3\1fcaec14f986e0e71f01f0b3bbd08475\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-70            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-70-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\alext\.gradle\caches\transforms-3\1fcaec14f986e0e71f01f0b3bbd08475\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-71
-72        <provider
-72-->[com.google.firebase:firebase-common:20.2.0] C:\Users\alext\.gradle\caches\transforms-3\e5e8b46c42da637d20e5a1aa476ca217\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
-73            android:name="com.google.firebase.provider.FirebaseInitProvider"
-73-->[com.google.firebase:firebase-common:20.2.0] C:\Users\alext\.gradle\caches\transforms-3\e5e8b46c42da637d20e5a1aa476ca217\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
-74            android:authorities="com.example.Goalden.firebaseinitprovider"
-74-->[com.google.firebase:firebase-common:20.2.0] C:\Users\alext\.gradle\caches\transforms-3\e5e8b46c42da637d20e5a1aa476ca217\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
-75            android:directBootAware="true"
-75-->[com.google.firebase:firebase-common:20.2.0] C:\Users\alext\.gradle\caches\transforms-3\e5e8b46c42da637d20e5a1aa476ca217\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
-76            android:exported="false"
-76-->[com.google.firebase:firebase-common:20.2.0] C:\Users\alext\.gradle\caches\transforms-3\e5e8b46c42da637d20e5a1aa476ca217\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
-77            android:initOrder="100" />
-77-->[com.google.firebase:firebase-common:20.2.0] C:\Users\alext\.gradle\caches\transforms-3\e5e8b46c42da637d20e5a1aa476ca217\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
-78
-79        <meta-data
-79-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\5be80fd96ece71a9b63b8f445c904109\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-80            android:name="com.google.android.gms.version"
-80-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\5be80fd96ece71a9b63b8f445c904109\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-81            android:value="@integer/google_play_services_version" />
-81-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\5be80fd96ece71a9b63b8f445c904109\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-82
-83        <provider
-83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\f187a8c29283efab887651cd6d829711\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-84            android:name="androidx.startup.InitializationProvider"
-84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\f187a8c29283efab887651cd6d829711\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-85            android:authorities="com.example.Goalden.androidx-startup"
-85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\f187a8c29283efab887651cd6d829711\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-86            android:exported="false" >
-86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\f187a8c29283efab887651cd6d829711\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-87            <meta-data
-87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\f187a8c29283efab887651cd6d829711\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-88                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\f187a8c29283efab887651cd6d829711\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-89                android:value="androidx.startup" />
-89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\f187a8c29283efab887651cd6d829711\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-90            <meta-data
-90-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\alext\.gradle\caches\transforms-3\e49483969ca61ed6dcb4f2914d5dfa3f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-91                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-91-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\alext\.gradle\caches\transforms-3\e49483969ca61ed6dcb4f2914d5dfa3f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-92                android:value="androidx.startup" />
-92-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\alext\.gradle\caches\transforms-3\e49483969ca61ed6dcb4f2914d5dfa3f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-93        </provider>
-94    </application>
-95
-96</manifest>
+36-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:18:9-20:40
+37            android:name="com.example.Goalden.DailyCalendarActivity"
+37-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:19:13-50
+38            android:exported="false" />
+38-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:20:13-37
+39        <activity
+39-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:21:9-23:40
+40            android:name="com.example.Goalden.EventEditActivity"
+40-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:22:13-46
+41            android:exported="false" />
+41-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:23:13-37
+42        <activity
+42-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:24:9-26:40
+43            android:name="com.example.Goalden.WeekViewActivity"
+43-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:25:13-45
+44            android:exported="false" />
+44-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:26:13-37
+45        <activity
+45-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:27:9-29:39
+46            android:name="com.example.Goalden.CalendarView"
+46-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:28:13-41
+47            android:exported="true" />
+47-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:29:13-36
+48        <activity
+48-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:30:9-37:20
+49            android:name="com.example.Goalden.HomeScreen"
+49-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:31:13-39
+50            android:exported="false"
+50-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:32:13-37
+51            android:label="@string/home_name" >
+51-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:33:13-46
+52            <meta-data
+52-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:34:13-36:36
+53                android:name="android.app.lib_name"
+53-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:35:17-52
+54                android:value="" />
+54-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:36:17-33
+55        </activity>
+56        <activity
+56-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:38:9-50:20
+57            android:name="com.example.Goalden.MainActivity"
+57-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:39:13-41
+58            android:exported="true" >
+58-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:40:13-36
+59            <intent-filter>
+59-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:41:13-45:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:42:17-69
+60-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:42:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:44:17-77
+62-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:44:27-74
+63            </intent-filter>
+64
+65            <meta-data
+65-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:34:13-36:36
+66                android:name="android.app.lib_name"
+66-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:35:17-52
+67                android:value="" />
+67-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:36:17-33
+68        </activity>
+69
+70        <service
+70-->[com.google.firebase:firebase-database-ktx:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\94115811cb3d23e2b621d58e13ee324f\transformed\jetified-firebase-database-ktx-20.2.1\AndroidManifest.xml:11:9-17:19
+71            android:name="com.google.firebase.components.ComponentDiscoveryService"
+71-->[com.google.firebase:firebase-database-ktx:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\94115811cb3d23e2b621d58e13ee324f\transformed\jetified-firebase-database-ktx-20.2.1\AndroidManifest.xml:12:13-84
+72            android:directBootAware="true"
+72-->[com.google.firebase:firebase-common:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+73            android:exported="false" >
+73-->[com.google.firebase:firebase-database-ktx:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\94115811cb3d23e2b621d58e13ee324f\transformed\jetified-firebase-database-ktx-20.2.1\AndroidManifest.xml:13:13-37
+74            <meta-data
+74-->[com.google.firebase:firebase-database-ktx:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\94115811cb3d23e2b621d58e13ee324f\transformed\jetified-firebase-database-ktx-20.2.1\AndroidManifest.xml:14:13-16:85
+75                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+75-->[com.google.firebase:firebase-database-ktx:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\94115811cb3d23e2b621d58e13ee324f\transformed\jetified-firebase-database-ktx-20.2.1\AndroidManifest.xml:15:17-124
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.firebase:firebase-database-ktx:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\94115811cb3d23e2b621d58e13ee324f\transformed\jetified-firebase-database-ktx-20.2.1\AndroidManifest.xml:16:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-database:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\158a90c641845d5e31c5d972cbfb4819\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:31:13-33:85
+78                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+78-->[com.google.firebase:firebase-database:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\158a90c641845d5e31c5d972cbfb4819\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:32:17-109
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-database:20.2.1] C:\Users\alext\.gradle\caches\transforms-3\158a90c641845d5e31c5d972cbfb4819\transformed\jetified-firebase-database-20.2.1\AndroidManifest.xml:33:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\7ca295bd64b3d212b5fb0e098983f0ab\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+81                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+81-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\7ca295bd64b3d212b5fb0e098983f0ab\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\7ca295bd64b3d212b5fb0e098983f0ab\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+83        </service>
+84
+85        <activity
+85-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\8c0ed4805e3803440eefb56c7826066c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+86            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+86-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\8c0ed4805e3803440eefb56c7826066c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+87            android:exported="false"
+87-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\8c0ed4805e3803440eefb56c7826066c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+88            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+88-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\8c0ed4805e3803440eefb56c7826066c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+89
+90        <provider
+90-->[com.google.firebase:firebase-common:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+91            android:name="com.google.firebase.provider.FirebaseInitProvider"
+91-->[com.google.firebase:firebase-common:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+92            android:authorities="com.example.Goalden.firebaseinitprovider"
+92-->[com.google.firebase:firebase-common:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+93            android:directBootAware="true"
+93-->[com.google.firebase:firebase-common:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+94            android:exported="false"
+94-->[com.google.firebase:firebase-common:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+95            android:initOrder="100" />
+95-->[com.google.firebase:firebase-common:20.3.2] C:\Users\alext\.gradle\caches\transforms-3\fa606b34d65ed7252b2281dc9e026109\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+96
+97        <meta-data
+97-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\b1a0e3f6e6f7e517967a5f2a4f9af557\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+98            android:name="com.google.android.gms.version"
+98-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\b1a0e3f6e6f7e517967a5f2a4f9af557\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+99            android:value="@integer/google_play_services_version" />
+99-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\alext\.gradle\caches\transforms-3\b1a0e3f6e6f7e517967a5f2a4f9af557\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+100
+101        <provider
+101-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+102            android:name="androidx.startup.InitializationProvider"
+102-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+103            android:authorities="com.example.Goalden.androidx-startup"
+103-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+104            android:exported="false" >
+104-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+105            <meta-data
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+107                android:value="androidx.startup" />
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alext\.gradle\caches\transforms-3\d9b600fb86533c6061b78fb9227bd348\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+108            <meta-data
+108-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\alext\.gradle\caches\transforms-3\8cb1e8bdeccb222b3e651432ef2d090a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+109                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+109-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\alext\.gradle\caches\transforms-3\8cb1e8bdeccb222b3e651432ef2d090a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+110                android:value="androidx.startup" />
+110-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\alext\.gradle\caches\transforms-3\8cb1e8bdeccb222b3e651432ef2d090a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+111        </provider>
+112    </application>
+113
+114</manifest>

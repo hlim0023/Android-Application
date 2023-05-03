@@ -4,6 +4,7 @@ package com.example.Goalden.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -24,12 +25,17 @@ public final class ActivityCalendarViewBinding implements ViewBinding {
   public final RecyclerView calendarRecyclerView;
 
   @NonNull
+  public final Button calendarViewHomeBtn;
+
+  @NonNull
   public final TextView monthYearTV;
 
   private ActivityCalendarViewBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView calendarRecyclerView, @NonNull TextView monthYearTV) {
+      @NonNull RecyclerView calendarRecyclerView, @NonNull Button calendarViewHomeBtn,
+      @NonNull TextView monthYearTV) {
     this.rootView = rootView;
     this.calendarRecyclerView = calendarRecyclerView;
+    this.calendarViewHomeBtn = calendarViewHomeBtn;
     this.monthYearTV = monthYearTV;
   }
 
@@ -66,6 +72,12 @@ public final class ActivityCalendarViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.calendar_view_homeBtn;
+      Button calendarViewHomeBtn = ViewBindings.findChildViewById(rootView, id);
+      if (calendarViewHomeBtn == null) {
+        break missingId;
+      }
+
       id = R.id.monthYearTV;
       TextView monthYearTV = ViewBindings.findChildViewById(rootView, id);
       if (monthYearTV == null) {
@@ -73,7 +85,7 @@ public final class ActivityCalendarViewBinding implements ViewBinding {
       }
 
       return new ActivityCalendarViewBinding((LinearLayout) rootView, calendarRecyclerView,
-          monthYearTV);
+          calendarViewHomeBtn, monthYearTV);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
