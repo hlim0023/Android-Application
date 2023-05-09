@@ -28,7 +28,7 @@ public class CalendarView extends BaseActivity implements  CalendarAdapter.OnIte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_view);
-        setupBottomNavigationView();
+//        setupBottomNavigationView();
         initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:theme="@style/AppTheme"
+    android:theme="@style/Theme.Week2"
     android:background="@drawable/calm_ocean">
     <TextView
         android:id="@+id/titleTextView"
@@ -14,6 +14,7 @@
         android:layout_marginTop="8dp"
         android:text="Welcome back to your ACT journey!"
         android:textSize="20sp"
+        android:fontFamily="fonts/Rajdhani-Medium.ttf"
         android:textColor="#FFFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +30,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.67"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

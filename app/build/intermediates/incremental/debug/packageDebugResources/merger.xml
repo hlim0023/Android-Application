@@ -26,7 +26,9 @@
         <item name="colorOnSecondary">@color/black</item>
         
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
         
+        <item name="android:fontFamily">@fonts/Rajdhani-Medium</item>
     </style></file><file path="C:\Users\alext\StudioProjects\androidproject\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Theme.Week2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_200</item>

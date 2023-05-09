@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.Goalden.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,9 +19,6 @@ import java.lang.String;
 public final class ActivityDailyCalendarBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
-
-  @NonNull
-  public final BottomNavigationView bottomNavigationView;
 
   @NonNull
   public final TextView dayOfWeekTV;
@@ -34,10 +30,9 @@ public final class ActivityDailyCalendarBinding implements ViewBinding {
   public final TextView monthDayText;
 
   private ActivityDailyCalendarBinding(@NonNull LinearLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView, @NonNull TextView dayOfWeekTV,
-      @NonNull ListView hourListView, @NonNull TextView monthDayText) {
+      @NonNull TextView dayOfWeekTV, @NonNull ListView hourListView,
+      @NonNull TextView monthDayText) {
     this.rootView = rootView;
-    this.bottomNavigationView = bottomNavigationView;
     this.dayOfWeekTV = dayOfWeekTV;
     this.hourListView = hourListView;
     this.monthDayText = monthDayText;
@@ -70,12 +65,6 @@ public final class ActivityDailyCalendarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.bottomNavigationView;
-      BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
-      if (bottomNavigationView == null) {
-        break missingId;
-      }
-
       id = R.id.dayOfWeekTV;
       TextView dayOfWeekTV = ViewBindings.findChildViewById(rootView, id);
       if (dayOfWeekTV == null) {
@@ -94,8 +83,8 @@ public final class ActivityDailyCalendarBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDailyCalendarBinding((LinearLayout) rootView, bottomNavigationView,
-          dayOfWeekTV, hourListView, monthDayText);
+      return new ActivityDailyCalendarBinding((LinearLayout) rootView, dayOfWeekTV, hourListView,
+          monthDayText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

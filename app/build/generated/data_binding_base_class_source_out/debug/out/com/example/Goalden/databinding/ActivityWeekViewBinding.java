@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.Goalden.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,9 +21,6 @@ import java.lang.String;
 public final class ActivityWeekViewBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
-
-  @NonNull
-  public final BottomNavigationView bottomNavigationView;
 
   @NonNull
   public final RecyclerView calendarRecyclerView;
@@ -39,11 +35,9 @@ public final class ActivityWeekViewBinding implements ViewBinding {
   public final Button weeklyViewFinishBtn;
 
   private ActivityWeekViewBinding(@NonNull LinearLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationView,
       @NonNull RecyclerView calendarRecyclerView, @NonNull ListView eventListView,
       @NonNull TextView monthYearTV, @NonNull Button weeklyViewFinishBtn) {
     this.rootView = rootView;
-    this.bottomNavigationView = bottomNavigationView;
     this.calendarRecyclerView = calendarRecyclerView;
     this.eventListView = eventListView;
     this.monthYearTV = monthYearTV;
@@ -77,12 +71,6 @@ public final class ActivityWeekViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.bottomNavigationView;
-      BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
-      if (bottomNavigationView == null) {
-        break missingId;
-      }
-
       id = R.id.calendarRecyclerView;
       RecyclerView calendarRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (calendarRecyclerView == null) {
@@ -107,8 +95,8 @@ public final class ActivityWeekViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityWeekViewBinding((LinearLayout) rootView, bottomNavigationView,
-          calendarRecyclerView, eventListView, monthYearTV, weeklyViewFinishBtn);
+      return new ActivityWeekViewBinding((LinearLayout) rootView, calendarRecyclerView,
+          eventListView, monthYearTV, weeklyViewFinishBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
