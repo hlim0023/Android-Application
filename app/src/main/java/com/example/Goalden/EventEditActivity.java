@@ -123,13 +123,16 @@ public class EventEditActivity extends AppCompatActivity {
         keyValuePairs.put("activityTime", timeButton.getText().toString());
         keyValuePairs.put("activityDate", dateButton.getText().toString());
         keyValuePairs.put("activityCategory", mySpinner.getSelectedItem().toString());
+        keyValuePairs.put("activityComplete", false);
         act.setValue(keyValuePairs);
 
         Activity activity = new Activity(
+                activityKey,
                 activityName,
                 LocalTime.parse(timeButton.getText().toString()),
                 CalendarUtils.toDate(dateButton.getText().toString()),
-                ActivityType.valueOf(mySpinner.getSelectedItem().toString())
+                ActivityType.valueOf(mySpinner.getSelectedItem().toString()),
+                false
         );
 
         UserInfo.loggedUser.addActivity(activity);

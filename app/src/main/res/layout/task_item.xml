@@ -38,8 +38,9 @@
         android:id="@+id/task_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mark as complete"
         android:buttonTint="#FFFFFF"
-        android:textColor="#FFFFFF"/>
+        android:text="Mark as complete"
+        android:textColor="#FFFFFF"
+        app:checkedState="unchecked" />
 
 </LinearLayout>

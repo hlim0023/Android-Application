@@ -139,7 +139,7 @@ public class MainActivity extends BaseActivity {
                 }
                 Toast.makeText(getApplicationContext(), "Username already exists", Toast.LENGTH_LONG).show();
             }
-            });
+        });
 
 
 
@@ -156,16 +156,20 @@ public class MainActivity extends BaseActivity {
                 UserInfo.users.add(user);
 
                 for (DataSnapshot dataSnapshot: snapshot.child("activities").getChildren()){
+                    String activityId = dataSnapshot.getKey();
                     String activityName = dataSnapshot.child("activityName").getValue(String.class);
                     String activityTime = dataSnapshot.child("activityTime").getValue(String.class);
                     String activityDate = dataSnapshot.child("activityDate").getValue(String.class);
                     String activityCategory = dataSnapshot.child("activityCategory").getValue(String.class);
+                    boolean activityComplete = Boolean.TRUE.equals(dataSnapshot.child("activityComplete").getValue(Boolean.class));
 
                     Activity activity = new Activity(
+                            activityId,
                             activityName,
                             LocalTime.parse(activityTime),
                             CalendarUtils.toDate(activityDate),
-                            ActivityType.valueOf(activityCategory)
+                            ActivityType.valueOf(activityCategory),
+                            activityComplete
                     );
 
                     user.addActivity(activity);
@@ -182,16 +186,20 @@ public class MainActivity extends BaseActivity {
                         String password = snapshot.child("userPassword").getValue(String.class);
                         ArrayList<Activity> activities = new ArrayList<>();
                         for (DataSnapshot dataSnapshot: snapshot.child("activities").getChildren()){
+                            String activityId = dataSnapshot.getKey();
                             String activityName = dataSnapshot.child("activityName").getValue(String.class);
                             String activityTime = dataSnapshot.child("activityTime").getValue(String.class);
                             String activityDate = dataSnapshot.child("activityDate").getValue(String.class);
                             String activityCategory = dataSnapshot.child("activityCategory").getValue(String.class);
+                            boolean activityComplete = Boolean.TRUE.equals(dataSnapshot.child("activityComplete").getValue(Boolean.class));
 
                             Activity activity = new Activity(
+                                    activityId,
                                     activityName,
                                     LocalTime.parse(activityTime),
                                     CalendarUtils.toDate(activityDate),
-                                    ActivityType.valueOf(activityCategory)
+                                    ActivityType.valueOf(activityCategory),
+                                    activityComplete
                             );
 
                             activities.add(activity);
@@ -204,7 +212,7 @@ public class MainActivity extends BaseActivity {
                     }
                 }
             }
-//            @Override
+            //            @Override
             public void onBackPressed() {
                 if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
                     getSupportFragmentManager().popBackStack();

@@ -26,7 +26,7 @@ public class BaseActivity extends AppCompatActivity {
                 case R.id.calendar_item:
                     Intent intent = new Intent(BaseActivity.this, CalendarView.class);
                     startActivity(intent);
-                    break;
+                    return false;
                 case R.id.tasks_item:
                     replaceFragment(new TasksFragment());
                     break;

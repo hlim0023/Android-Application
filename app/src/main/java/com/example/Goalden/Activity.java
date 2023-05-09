@@ -36,17 +36,37 @@ public class Activity {
         return activities;
     }
 
+    private String activity_id;
     private String name;
     private LocalTime time;
     private LocalDate date;
     private String description;
     private ActivityType type;
 
-    public Activity(String name, LocalTime time, LocalDate date, ActivityType type) {
+    private boolean isComplete;
+    public Activity(String activity_id, String name, LocalTime time, LocalDate date, ActivityType type, boolean isComplete) {
+        this.activity_id = activity_id;
         this.name = name;
         this.time = time;
         this.date = date;
         this.type = type;
+        this.isComplete = isComplete;
+    }
+
+    public String getActivity_id() {
+        return activity_id;
+    }
+
+    public void setActivity_id(String activity_id) {
+        this.activity_id = activity_id;
+    }
+
+    public boolean isComplete() {
+        return isComplete;
+    }
+
+    public void setComplete(boolean complete) {
+        isComplete = complete;
     }
 
     public String getName() {

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".EventEditActivity">
-    
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,18 +16,19 @@
         android:text="Name: "
         android:textSize="20dp"
         android:textAlignment="center"
-        android:textColor="@color/black">
+        android:textColor="@color/white">
     </TextView>
-    
+
     <EditText
         android:id="@+id/activityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="20sp"
         android:ems="10"
-        android:inputType="text">
-    </EditText>
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"></EditText>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
@@ -40,7 +41,7 @@
             android:layout_height="wrap_content"
             android:text="Date: "
             android:textSize="20dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="10dp">
@@ -53,7 +54,7 @@
             android:layout_height="wrap_content"
             android:onClick="openDatePicker"
             android:text="January 01 2023"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20dp"
             app:layout_constraintLeft_toRightOf="@id/dateTV"
             app:layout_constraintTop_toTopOf="parent">
@@ -67,10 +68,10 @@
         android:layout_height="wrap_content"
         android:onClick="popTimePicker"
         android:text="Select Time"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:background="@null"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#BA68C8"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toRightOf="@id/dateTV"
@@ -84,28 +85,27 @@
         android:text="Select a category:"
         android:textSize="20dp"
         android:layout_gravity="center"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <Spinner
         android:id="@+id/my_spinner"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:backgroundTint="#BA68C8"/>
 
     <Button
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
-        android:textColor="@color/blue"
+        android:textColor="@color/white"
         android:background="@null"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#BA68C8"
         android:textStyle="bold"
         android:onClick="saveActivityAction"
         android:layout_gravity="center"
         android:textSize="20sp">
     </Button>
 
-
-    
 </LinearLayout>

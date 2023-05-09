@@ -8,6 +8,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
+import com.github.mikephil.charting.data.PieEntry;
+
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link ProfileFragment#newInstance} factory method to
@@ -67,20 +71,41 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
-
-        // Set the progress bar
-        // Replace these values with the actual progress and maximum values
-//        int userProgress = 40;
-//        int maximumProgress = 100;
-//
-//        // Calculate the percentage
-//        int progressPercentage = (userProgress * 100) / maximumProgress;
-//        ProgressBar profileProgressBar = view.findViewById(R.id.goal_progress_bar1);
-//        profileProgressBar.setProgress(30);
-//        ProgressBar profileProgressBar2 = view.findViewById(R.id.goal_progress_bar2);
-//        profileProgressBar2.setProgress(progressPercentage);
-//        ProgressBar profileProgressBar3 = view.findViewById(R.id.goal_progress_bar3);
-//        profileProgressBar3.setProgress(60);
+        ArrayList<PieEntry> entries = new ArrayList<>();
+        int acceptanceCount= 0;
+        int cognitiveCount= 0;
+        int presentCount= 0;
+        int contextCount= 0;
+        int valuesCount= 0;
+        int actionCount= 0;
+        float total = 0;
+        for(Activity activity: UserInfo.loggedUser.getActivities()){
+            if(activity.getType() == ActivityType.Acceptance && activity.isComplete())
+                acceptanceCount += 1;
+            else if (activity.getType() == ActivityType.CognitiveDefusion && activity.isComplete())
+                cognitiveCount += 1;
+            else if (activity.getType() == ActivityType.BeingPresent && activity.isComplete())
+                presentCount += 1;
+            else if (activity.getType() == ActivityType.SelfAsContext && activity.isComplete())
+                contextCount += 1;
+            else if (activity.getType() == ActivityType.Values && activity.isComplete())
+                valuesCount += 1;
+            else if (activity.getType() == ActivityType.CommittedAction && activity.isComplete())
+                actionCount += 1;
+            total += 1;
+        }
+        ProgressBar profileProgressBar1 = view.findViewById(R.id.progress_bar_1);
+        profileProgressBar1.setProgress(acceptanceCount);
+        ProgressBar profileProgressBar2 = view.findViewById(R.id.progress_bar_2);
+        profileProgressBar2.setProgress(cognitiveCount);
+        ProgressBar profileProgressBar3 = view.findViewById(R.id.progress_bar_3);
+        profileProgressBar3.setProgress(presentCount);
+        ProgressBar profileProgressBar4 = view.findViewById(R.id.progress_bar_4);
+        profileProgressBar4.setProgress(contextCount);
+        ProgressBar profileProgressBar5 = view.findViewById(R.id.progress_bar_5);
+        profileProgressBar5.setProgress(valuesCount);
+        ProgressBar profileProgressBar6 = view.findViewById(R.id.progress_bar_6);
+        profileProgressBar6.setProgress(actionCount);
 
 //        Button settingsButton = view.findViewById(R.id.settings_button);
 //        settingsButton.setOnClickListener(new View.OnClickListener() {
