@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="bottom"
+    android:theme="@style/Theme.Week2"
     app:itemIconTint="@android:color/darker_gray"
     app:itemTextColor="@android:color/white"
     app:menu="@menu/bottom_bar" />

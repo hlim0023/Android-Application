@@ -30,9 +30,9 @@ public class TasksFragment extends Fragment {
         tasksRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         taskList = new ArrayList<>();
-        taskList.add(new Task("Task 1", "Task 1 description", "2023-05-11", false, "Acceptance"));
-        taskList.add(new Task("Task 2", "Task 2 description", "2023-05-12", false, "Commitment"));
-        taskList.add(new Task("Task 3", "Task 3 description", "2023-05-13", false, "Defusion"));
+        taskList.add(new Task("University", "Assignment", "2023-05-11", false, "Acceptance"));
+        taskList.add(new Task("Basketball", "Game", "2023-05-12", false, "Commitment"));
+        taskList.add(new Task("Go to the beach", "Relax", "2023-05-13", false, "Defusion"));
 
 
         taskAdapter = new TaskAdapter(taskList);

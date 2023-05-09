@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import com.example.Goalden.CategoryDetailFragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,9 +20,8 @@ import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
-import com.github.mikephil.charting.utils.ColorTemplate;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class HomeFragment extends Fragment {
     PieChart pieChart;
@@ -77,7 +76,7 @@ public class HomeFragment extends Fragment {
         dataSet.setValueTextSize(16f);
 
         PieData data = new PieData(dataSet);
-        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Rajdhani-Medium.ttf");
+        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "fonts/new_font.ttf");
         dataSet.setValueTypeface(typeface);
         pieChart.setEntryLabelTypeface(typeface);
         pieChart.setData(data);
@@ -85,21 +84,24 @@ public class HomeFragment extends Fragment {
         pieChart.setTransparentCircleRadius(25f);
         pieChart.animateXY(500, 500);
         dataSet.setValueFormatter(new PercentFormatter(pieChart));
-        pieChart.setDrawEntryLabels(false);
+//        pieChart.setDrawEntryLabels(false);
+        pieChart.getDescription().setEnabled(false);
         pieChart.invalidate();
 
         // Customize the legend
         Legend legend = pieChart.getLegend();
-        legend.setOrientation(Legend.LegendOrientation.VERTICAL);
-        legend.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
-        legend.setHorizontalAlignment(Legend.LegendHorizontalAlignment.LEFT);
-        legend.setDrawInside(false);
-        legend.setXEntrySpace(7f);
-        legend.setYEntrySpace(0f);
-        legend.setYOffset(0f);
-        legend.setTypeface(typeface);
-        legend.setTextSize(14f);
-        legend.setTextColor(Color.WHITE);
+        legend.setEnabled(false);
+//        Legend legend = pieChart.getLegend();
+//        legend.setOrientation(Legend.LegendOrientation.VERTICAL);
+//        legend.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
+//        legend.setHorizontalAlignment(Legend.LegendHorizontalAlignment.LEFT);
+//        legend.setDrawInside(false);
+//        legend.setXEntrySpace(7f);
+//        legend.setYEntrySpace(0f);
+//        legend.setYOffset(0f);
+//        legend.setTypeface(typeface);
+//        legend.setTextSize(14f);
+//        legend.setTextColor(Color.WHITE);
 
 
         // Set a listener for when a value is selected

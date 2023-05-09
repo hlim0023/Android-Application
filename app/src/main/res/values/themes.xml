@@ -13,6 +13,9 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:fontFamily">@fonts/Rajdhani-Medium</item>
+        <item name="android:windowBackground">@drawable/pattern3</item>
+        <item name="android:fontFamily">@font/font_family</item>
+        <item name="android:textColor">#FFFFFFFF</item>
     </style>
+
 </resources>

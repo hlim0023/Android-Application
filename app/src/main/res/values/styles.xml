@@ -12,7 +12,7 @@
         <item name="colorSecondaryVariant">#F50057</item> <!-- Darker pink -->
         <item name="colorOnSecondary">#FFFFFF</item> <!-- White -->
         <item name="android:windowBackground">#FFFFFF</item> <!-- White background -->
-        <item name="android:fontFamily">@fonts/Rajdhani-Medium</item>
+        <item name="android:fontFamily">@font/new_font</item>
 
     </style>
 

@@ -17,7 +17,12 @@ drawable ic_baseline_person_24
 drawable ic_baseline_task_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable pattern
+drawable pattern2
+drawable pattern3
 drawable rounded_background
+font font_family
+font new_font
 id activityName
 id activity_content
 id add_task_button

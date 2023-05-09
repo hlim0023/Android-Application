@@ -36,6 +36,10 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\font_font_family.xml.flat",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\font\\font_family.xml"
+    },
+    {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\layout_activity_base.xml.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\activity_base.xml"
     },
@@ -72,8 +76,8 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\drawable_background_overlay.xml.flat",
-        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\drawable\\background_overlay.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\drawable_pattern2.jpg.flat",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\drawable\\pattern2.jpg"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\drawable_card_theme.xml.flat",
@@ -90,6 +94,10 @@
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\font_new_font.ttf.flat",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\font\\new_font.ttf"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\layout_fragment_calendar.xml.flat",
@@ -116,10 +124,6 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.example.Goalden.app-merged_res-33:/layout_activity_calendar_view.xml.flat",
-        "source": "com.example.Goalden.app-main-35:/layout/activity_calendar_view.xml"
-    },
-    {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\xml\\data_extraction_rules.xml"
     },
@@ -140,6 +144,10 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\fragment_category_detail.xml"
     },
     {
+        "merged": "com.example.Goalden.app-merged_res-33:/layout_fragment_category_detail.xml.flat",
+        "source": "com.example.Goalden.app-main-35:/layout/fragment_category_detail.xml"
+    },
+    {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\layout_fragment_tasks.xml.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\fragment_tasks.xml"
     },
@@ -156,6 +164,10 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\drawable_pattern3.jpg.flat",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\drawable\\pattern3.jpg"
+    },
+    {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\layout_task_item.xml.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\task_item.xml"
     },
@@ -170,6 +182,10 @@
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\drawable_pattern.jpg.flat",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\drawable\\pattern.jpg"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\layout_fragment_settings.xml.flat",

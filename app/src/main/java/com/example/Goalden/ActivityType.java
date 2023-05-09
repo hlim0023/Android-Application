@@ -1,10 +1,9 @@
 package com.example.Goalden;
 
 public enum ActivityType {
-    Academic,
-    Health,
-    Entertainment,
-    Social,
-    Meal,
-    Other
+    CommittedAction,
+    Acceptance,
+    CognitiveDefusion,
+    BeingPresent,
+    SelfAsContext
 }

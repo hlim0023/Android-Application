@@ -29,7 +29,7 @@
         <item name="colorSecondaryVariant">#F50057</item> 
         <item name="colorOnSecondary">#FFFFFF</item> 
         <item name="android:windowBackground">#FFFFFF</item> 
-        <item name="android:fontFamily">@fonts/Rajdhani-Medium</item>
+        <item name="android:fontFamily">@font/new_font</item>
 
     </style>
     <style name="RoundedEdges">
@@ -53,6 +53,8 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
 
         
-        <item name="android:fontFamily">@fonts/Rajdhani-Medium</item>
+        <item name="android:windowBackground">@drawable/pattern3</item>
+        <item name="android:fontFamily">@font/font_family</item>
+        <item name="android:textColor">#FFFFFFFF</item>
     </style>
 </resources>

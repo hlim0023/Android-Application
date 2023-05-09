@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -25,6 +26,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.Locale;
 
 public class EventEditActivity extends AppCompatActivity {
@@ -121,10 +123,17 @@ public class EventEditActivity extends AppCompatActivity {
 //        );
         String activityKey = myRef.child("activities").push().getKey();
         DatabaseReference act = myRef.child("activities").child(activityKey);
-        act.child("activityName").setValue(activityName);
-        act.child("activityTime").setValue(timeButton.getText().toString());
-        act.child("activityDate").setValue(dateButton.getText().toString());
-        act.child("activityCategory").setValue(mySpinner.getSelectedItem().toString());
+        HashMap<String, Object> keyValuePairs = new HashMap<>();
+        keyValuePairs.put("activityName", activityName);
+        keyValuePairs.put("activityTime", timeButton.getText().toString());
+        keyValuePairs.put("activityDate", dateButton.getText().toString());
+        keyValuePairs.put("activityCategory", mySpinner.getSelectedItem().toString());
+        act.setValue(keyValuePairs);
+//        act.child("activityName").setValue(activityName);
+//        act.child("activityTime").setValue(timeButton.getText().toString());
+//        act.child("activityDate").setValue(dateButton.getText().toString());
+//        act.child("activityCategory").setValue(mySpinner.getSelectedItem().toString());
+        Log.d("SAVEACTIVITY123", "saveActivityAction: DONE");
         finish();
     }
 

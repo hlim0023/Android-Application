@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:theme="@style/Theme.Week2"
-    android:background="@drawable/calm_ocean">
+    android:theme="@style/Theme.Week2">
+
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
@@ -14,8 +14,8 @@
         android:layout_marginTop="8dp"
         android:text="Welcome back to your ACT journey!"
         android:textSize="20sp"
-        android:fontFamily="fonts/Rajdhani-Medium.ttf"
         android:textColor="#FFFFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-32:\\layout\\fragment_category_detail.xml",
-        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\fragment_category_detail.xml"
-    },
-    {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-32:\\layout\\activity_calendar_view.xml",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\activity_calendar_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-32:\\layout\\fragment_category_detail.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\fragment_category_detail.xml"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-32:\\layout\\event_cell.xml",
@@ -24,8 +24,8 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "com.example.Goalden.app-mergeDebugResources-32:/layout/activity_calendar_view.xml",
-        "source": "com.example.Goalden.app-main-35:/layout/activity_calendar_view.xml"
+        "merged": "com.example.Goalden.app-mergeDebugResources-32:/layout/fragment_category_detail.xml",
+        "source": "com.example.Goalden.app-main-35:/layout/fragment_category_detail.xml"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-32:\\layout\\activity_week_view.xml",
