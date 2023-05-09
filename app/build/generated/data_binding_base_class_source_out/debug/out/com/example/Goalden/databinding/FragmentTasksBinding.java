@@ -4,25 +4,38 @@ package com.example.Goalden.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.Button;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.Goalden.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentTasksBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final RelativeLayout rootView;
 
-  private FragmentTasksBinding(@NonNull FrameLayout rootView) {
+  @NonNull
+  public final Button addTaskButton;
+
+  @NonNull
+  public final RecyclerView tasksRecyclerView;
+
+  private FragmentTasksBinding(@NonNull RelativeLayout rootView, @NonNull Button addTaskButton,
+      @NonNull RecyclerView tasksRecyclerView) {
     this.rootView = rootView;
+    this.addTaskButton = addTaskButton;
+    this.tasksRecyclerView = tasksRecyclerView;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +56,25 @@ public final class FragmentTasksBinding implements ViewBinding {
 
   @NonNull
   public static FragmentTasksBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.add_task_button;
+      Button addTaskButton = ViewBindings.findChildViewById(rootView, id);
+      if (addTaskButton == null) {
+        break missingId;
+      }
 
-    return new FragmentTasksBinding((FrameLayout) rootView);
+      id = R.id.tasksRecyclerView;
+      RecyclerView tasksRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (tasksRecyclerView == null) {
+        break missingId;
+      }
+
+      return new FragmentTasksBinding((RelativeLayout) rootView, addTaskButton, tasksRecyclerView);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ProgressBar;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,6 +24,11 @@ public class ProfileFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+
+
+
+
 
     /**
      * Use this factory method to create a new instance of
@@ -52,12 +59,35 @@ public class ProfileFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        // Set the progress bar
+        // Replace these values with the actual progress and maximum values
+        int userProgress = 40;
+        int maximumProgress = 100;
+
+        // Calculate the percentage
+        int progressPercentage = (userProgress * 100) / maximumProgress;
+        ProgressBar profileProgressBar = view.findViewById(R.id.goal_progress_bar);
+        profileProgressBar.setProgress(progressPercentage);
+
+//        Button settingsButton = view.findViewById(R.id.settings_button);
+//        settingsButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Navigate to the SettingsFragment
+//                NavController navController = Navigation.findNavController(v);
+//                navController.navigate(R.id.action_profileFragment_to_settingsFragment);
+//            }
+//        });
+        return view;
     }
+
 }

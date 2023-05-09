@@ -29,7 +29,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     Button loginButton;
     Button signButton;
@@ -40,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
 
     HomeActivityBinding binding;
 
-    private void replaceFragment(Fragment fragment){
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.home_layout_frame, fragment);
-        fragmentTransaction.commit();
-    }
+//    public void replaceFragment(Fragment fragment){
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        fragmentTransaction.replace(R.id.home_layout_frame, fragment);
+//        fragmentTransaction.commit();
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,28 +62,7 @@ public class MainActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
-//                    Toast.makeText(getApplicationContext(), "Hi, "+ username.getText().toString() + ". Welcome back.", Toast.LENGTH_LONG).show();
-//                    //Toast is to display the msg like pop up window
-//                    binding = HomeActivityBinding.inflate(getLayoutInflater());
-//                    setContentView(binding.getRoot());
-//                    replaceFragment(new HomeFragment());
-//
-//                    binding.bottomNavigationView.setOnItemSelectedListener(item ->{
-//                        switch (item.getItemId()){
-//                            case R.id.calendar_item:
-//                                // TODO: FIX this to fragment
-//                                Intent intent = new Intent(MainActivity.this, CalendarView.class);
-//                                startActivity(intent);
-//                                break;
-//                        }
-//
-//                        return false;
-//
-//                    });
-////                    Intent intent = new Intent(MainActivity.this, HomeScreen.class);
-////                    startActivity(intent);
-//                }
+
                 boolean flag = false;
                 if (UserInfo.users.size() == 0){
                     Toast.makeText(getApplicationContext(), "No Recorded Users !", Toast.LENGTH_SHORT).show();
@@ -104,19 +83,27 @@ public class MainActivity extends AppCompatActivity {
                             //Changed Intent to calendar
                             binding = HomeActivityBinding.inflate(getLayoutInflater());
                             setContentView(binding.getRoot());
+                            setupBottomNavigationView();
                             replaceFragment(new HomeFragment());
-
-                            binding.bottomNavigationView.setOnItemSelectedListener(item ->{
-                                switch (item.getItemId()){
-                                    case R.id.calendar_item:
-                                        // TODO: FIX this to fragment
-                                        Intent intent = new Intent(MainActivity.this, CalendarView.class);
-                                        startActivity(intent);
-                                        break;
-                                }
-
-                                return false;
-                            });
+//
+//                            binding.bottomNavigationView.setOnItemSelectedListener(item ->{
+//                                switch (item.getItemId()) {
+//                                    case R.id.home_item:
+//                                        replaceFragment(new HomeFragment());
+//                                        break;
+//                                    case R.id.calendar_item:
+//                                        Intent intent = new Intent(MainActivity.this, CalendarView.class);
+//                                        startActivity(intent);
+//                                        break;
+//                                    case R.id.tasks_item:
+//                                        replaceFragment(new TasksFragment());
+//                                        break;
+//                                    case R.id.profile_item:
+//                                        replaceFragment(new ProfileFragment());
+//                                        break;
+//                                }
+//                                return true;
+//                            });
                         }
                     }
                     if(!flag)
@@ -209,7 +196,14 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-
+//            @Override
+            public void onBackPressed() {
+                if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
+                    getSupportFragmentManager().popBackStack();
+                } else {
+                    replaceFragment(new HomeFragment());
+                }
+            }
             @Override
             public void onChildRemoved(@NonNull DataSnapshot snapshot) {
                 for(UserInfo user: UserInfo.users){

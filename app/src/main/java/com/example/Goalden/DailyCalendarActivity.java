@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class DailyCalendarActivity extends AppCompatActivity {
+public class DailyCalendarActivity extends BaseActivity {
 
     private TextView monthDayText;
     private TextView dayOfWeekTV;
@@ -28,6 +28,7 @@ public class DailyCalendarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_calendar);
+        setupBottomNavigationView();
         initWidgets();
     }
 

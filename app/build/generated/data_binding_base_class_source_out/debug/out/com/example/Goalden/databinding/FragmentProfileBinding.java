@@ -4,25 +4,67 @@ package com.example.Goalden.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.Goalden.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final ConstraintLayout rootView;
 
-  private FragmentProfileBinding(@NonNull FrameLayout rootView) {
+  @NonNull
+  public final TextView completedGoals;
+
+  @NonNull
+  public final ProgressBar goalProgressBar;
+
+  @NonNull
+  public final TextView inProgressGoals;
+
+  @NonNull
+  public final ImageView profilePicture;
+
+  @NonNull
+  public final Button settingsButton;
+
+  @NonNull
+  public final TextView totalGoals;
+
+  @NonNull
+  public final TextView userEmail;
+
+  @NonNull
+  public final TextView userName;
+
+  private FragmentProfileBinding(@NonNull ConstraintLayout rootView,
+      @NonNull TextView completedGoals, @NonNull ProgressBar goalProgressBar,
+      @NonNull TextView inProgressGoals, @NonNull ImageView profilePicture,
+      @NonNull Button settingsButton, @NonNull TextView totalGoals, @NonNull TextView userEmail,
+      @NonNull TextView userName) {
     this.rootView = rootView;
+    this.completedGoals = completedGoals;
+    this.goalProgressBar = goalProgressBar;
+    this.inProgressGoals = inProgressGoals;
+    this.profilePicture = profilePicture;
+    this.settingsButton = settingsButton;
+    this.totalGoals = totalGoals;
+    this.userEmail = userEmail;
+    this.userName = userName;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +85,63 @@ public final class FragmentProfileBinding implements ViewBinding {
 
   @NonNull
   public static FragmentProfileBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.completed_goals;
+      TextView completedGoals = ViewBindings.findChildViewById(rootView, id);
+      if (completedGoals == null) {
+        break missingId;
+      }
 
-    return new FragmentProfileBinding((FrameLayout) rootView);
+      id = R.id.goal_progress_bar;
+      ProgressBar goalProgressBar = ViewBindings.findChildViewById(rootView, id);
+      if (goalProgressBar == null) {
+        break missingId;
+      }
+
+      id = R.id.in_progress_goals;
+      TextView inProgressGoals = ViewBindings.findChildViewById(rootView, id);
+      if (inProgressGoals == null) {
+        break missingId;
+      }
+
+      id = R.id.profile_picture;
+      ImageView profilePicture = ViewBindings.findChildViewById(rootView, id);
+      if (profilePicture == null) {
+        break missingId;
+      }
+
+      id = R.id.settings_button;
+      Button settingsButton = ViewBindings.findChildViewById(rootView, id);
+      if (settingsButton == null) {
+        break missingId;
+      }
+
+      id = R.id.total_goals;
+      TextView totalGoals = ViewBindings.findChildViewById(rootView, id);
+      if (totalGoals == null) {
+        break missingId;
+      }
+
+      id = R.id.user_email;
+      TextView userEmail = ViewBindings.findChildViewById(rootView, id);
+      if (userEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.user_name;
+      TextView userName = ViewBindings.findChildViewById(rootView, id);
+      if (userName == null) {
+        break missingId;
+      }
+
+      return new FragmentProfileBinding((ConstraintLayout) rootView, completedGoals,
+          goalProgressBar, inProgressGoals, profilePicture, settingsButton, totalGoals, userEmail,
+          userName);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

@@ -19,7 +19,7 @@ import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
-public class CalendarView extends AppCompatActivity implements  CalendarAdapter.OnItemListener{
+public class CalendarView extends BaseActivity implements  CalendarAdapter.OnItemListener{
 
     private TextView monthYearText;
     private RecyclerView calendarRecycleView;
@@ -28,9 +28,11 @@ public class CalendarView extends AppCompatActivity implements  CalendarAdapter.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_view);
+        setupBottomNavigationView();
         initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();
+
     }
 
     private void initWidgets() {
@@ -58,7 +60,13 @@ public class CalendarView extends AppCompatActivity implements  CalendarAdapter.
         CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusMonths(1);
         setMonthView();
     }
-
+    public void onBackPressed() {
+        if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
+            getSupportFragmentManager().popBackStack();
+        } else {
+            replaceFragment(new HomeFragment());
+        }
+    }
     @Override
     protected void onResume() {
         super.onResume();

@@ -21,6 +21,25 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home_name">Home </string>
     <string name="project_id" translatable="false">fit3162-2023s1-goalden-28975</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#ECEFF1</item> 
+        <item name="colorPrimaryVariant">#B0BEC5</item> 
+        <item name="colorOnPrimary">#000000</item> 
+        <item name="colorSecondary">#FF4081</item> 
+        <item name="colorSecondaryVariant">#F50057</item> 
+        <item name="colorOnSecondary">#FFFFFF</item> 
+        <item name="android:windowBackground">#FFFFFF</item> 
+        <item name="android:fontFamily">@fonts/Rajdhani-Medium</item>
+
+    </style>
+    <style name="RoundedEdges">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> 
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerRadius50Percent" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
     <style name="Theme.Week2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

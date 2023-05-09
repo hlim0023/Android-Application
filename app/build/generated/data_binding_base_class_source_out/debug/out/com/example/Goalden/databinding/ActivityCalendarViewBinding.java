@@ -9,17 +9,25 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.Goalden.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityCalendarViewBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final BottomNavigationView bottomNavigationView;
+
+  @NonNull
+  public final LinearLayout calendarContent;
 
   @NonNull
   public final RecyclerView calendarRecyclerView;
@@ -30,10 +38,13 @@ public final class ActivityCalendarViewBinding implements ViewBinding {
   @NonNull
   public final TextView monthYearTV;
 
-  private ActivityCalendarViewBinding(@NonNull LinearLayout rootView,
+  private ActivityCalendarViewBinding(@NonNull ConstraintLayout rootView,
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull LinearLayout calendarContent,
       @NonNull RecyclerView calendarRecyclerView, @NonNull Button calendarViewHomeBtn,
       @NonNull TextView monthYearTV) {
     this.rootView = rootView;
+    this.bottomNavigationView = bottomNavigationView;
+    this.calendarContent = calendarContent;
     this.calendarRecyclerView = calendarRecyclerView;
     this.calendarViewHomeBtn = calendarViewHomeBtn;
     this.monthYearTV = monthYearTV;
@@ -41,7 +52,7 @@ public final class ActivityCalendarViewBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -66,6 +77,18 @@ public final class ActivityCalendarViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottomNavigationView;
+      BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigationView == null) {
+        break missingId;
+      }
+
+      id = R.id.calendar_content;
+      LinearLayout calendarContent = ViewBindings.findChildViewById(rootView, id);
+      if (calendarContent == null) {
+        break missingId;
+      }
+
       id = R.id.calendarRecyclerView;
       RecyclerView calendarRecyclerView = ViewBindings.findChildViewById(rootView, id);
       if (calendarRecyclerView == null) {
@@ -84,8 +107,8 @@ public final class ActivityCalendarViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCalendarViewBinding((LinearLayout) rootView, calendarRecyclerView,
-          calendarViewHomeBtn, monthYearTV);
+      return new ActivityCalendarViewBinding((ConstraintLayout) rootView, bottomNavigationView,
+          calendarContent, calendarRecyclerView, calendarViewHomeBtn, monthYearTV);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearanceOverlay.App.CornerRadius50Percent" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#ECEFF1</item> <!-- Light gray -->
+        <item name="colorPrimaryVariant">#B0BEC5</item> <!-- Darker gray -->
+        <item name="colorOnPrimary">#000000</item> <!-- Black -->
+        <item name="colorSecondary">#FF4081</item> <!-- Pink -->
+        <item name="colorSecondaryVariant">#F50057</item> <!-- Darker pink -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- White -->
+        <item name="android:windowBackground">#FFFFFF</item> <!-- White background -->
+        <item name="android:fontFamily">@fonts/Rajdhani-Medium</item>
+
+    </style>
+
+    <style name="RoundedEdges">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Adjust the corner radius as needed -->
+    </style>
+</resources>

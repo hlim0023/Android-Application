@@ -32,7 +32,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Week2" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.Goalden.DailyCalendarActivity"
             android:exported="false" />
