@@ -19,7 +19,7 @@ import java.util.List;
 public class TasksFragment extends Fragment {
     private RecyclerView tasksRecyclerView;
     private TaskAdapter taskAdapter;
-    private List<Task> taskList;
+
 
     @Nullable
     @Override
@@ -29,13 +29,8 @@ public class TasksFragment extends Fragment {
         tasksRecyclerView = view.findViewById(R.id.tasksRecyclerView);
         tasksRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        taskList = new ArrayList<>();
-        taskList.add(new Task("University", "Assignment", "2023-05-11", false, "Acceptance"));
-        taskList.add(new Task("Basketball", "Game", "2023-05-12", false, "Commitment"));
-        taskList.add(new Task("Go to the beach", "Relax", "2023-05-13", false, "Defusion"));
 
-
-        taskAdapter = new TaskAdapter(taskList);
+        taskAdapter = new TaskAdapter(UserInfo.loggedUser.getActivities());
         tasksRecyclerView.setAdapter(taskAdapter);
 
         Button addTaskButton = view.findViewById(R.id.add_task_button);

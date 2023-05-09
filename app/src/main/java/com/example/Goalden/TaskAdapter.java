@@ -9,12 +9,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
-    private List<Task> taskList;
+    private ArrayList<Activity> taskList;
 
-    public TaskAdapter(List<Task> taskList) {
+    public TaskAdapter(ArrayList<Activity> taskList) {
         this.taskList = taskList;
     }
 
@@ -27,11 +28,10 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Task task = taskList.get(position);
-        holder.taskTitle.setText(task.getTitle());
+        Activity task = taskList.get(position);
+        holder.taskTitle.setText(task.getName());
         holder.taskDescription.setText(task.getDescription());
-        holder.taskDueDate.setText("Due Date: " + task.getDueDate());
-        holder.taskCheckbox.setChecked(task.isCompleted());
+
     }
 
     @Override
@@ -49,7 +49,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
             super(itemView);
             taskTitle = itemView.findViewById(R.id.task_title);
             taskDescription = itemView.findViewById(R.id.task_description);
-            taskDueDate = itemView.findViewById(R.id.task_due_date);
             taskCheckbox = itemView.findViewById(R.id.task_checkbox);
         }
     }
