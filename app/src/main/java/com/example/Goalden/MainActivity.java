@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.renderscript.ScriptGroup;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -65,7 +66,9 @@ public class MainActivity extends BaseActivity {
 
                 boolean flag = false;
                 if (UserInfo.users.size() == 0){
-                    Toast.makeText(getApplicationContext(), "No Recorded Users !", Toast.LENGTH_SHORT).show();
+                    Toast toast = Toast.makeText(getApplicationContext(), "No existing account found.", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.BOTTOM, 0, 100);
+                    toast.show();
                 } else {
                     for (int i = 0; i < UserInfo.users.size(); i++) {
                         Log.d("LOGIN", UserInfo.users.toString());
@@ -77,7 +80,9 @@ public class MainActivity extends BaseActivity {
                             UserInfo.loggedUser = user;
                             flag = true;
                             Log.d("USERNAME_PASSWORD", users_username + " " + users_password);
-                            Toast.makeText(getApplicationContext(), "Hi, " + username.getText().toString() + " Welcome back.", Toast.LENGTH_LONG).show();
+                            Toast toast = Toast.makeText(getApplicationContext(), "Hi " + username.getText().toString() + ", welcome back.", Toast.LENGTH_LONG);
+                            toast.setGravity(Gravity.BOTTOM, 0, 100);
+                            toast.show();
                             //Toast is to display the msg like pop up window
                             //Intent intent = new Intent(MainActivity.this, HomeScreen.class);
                             //Changed Intent to calendar
@@ -85,7 +90,7 @@ public class MainActivity extends BaseActivity {
                             setContentView(binding.getRoot());
                             setupBottomNavigationView();
                             replaceFragment(new HomeFragment());
-//
+                            break;
 //                            binding.bottomNavigationView.setOnItemSelectedListener(item ->{
 //                                switch (item.getItemId()) {
 //                                    case R.id.home_item:
@@ -106,8 +111,11 @@ public class MainActivity extends BaseActivity {
 //                            });
                         }
                     }
-                    if(!flag)
-                        Toast.makeText(getApplicationContext(), "Wrong Username or Password, please try again!", Toast.LENGTH_SHORT).show();
+                    if(!flag) {
+                        Toast toast = Toast.makeText(getApplicationContext(), "Wrong username or password, please try again.", Toast.LENGTH_SHORT);
+                        toast.setGravity(Gravity.BOTTOM, 0, 100);
+                        toast.show();
+                    }
                 }
 
 
@@ -129,7 +137,7 @@ public class MainActivity extends BaseActivity {
 //                mCondition.child(userId).child("activities").setValue(Activity)
 //                mCondition.removeValue();
                 }
-                Toast.makeText(getApplicationContext(), "Username already exist", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Username already exists", Toast.LENGTH_LONG).show();
             }
             });
 

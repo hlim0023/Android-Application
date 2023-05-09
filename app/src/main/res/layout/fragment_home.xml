@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:theme="@style/AppTheme">
-
+    android:theme="@style/AppTheme"
+    android:background="@drawable/calm_ocean">
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
@@ -14,6 +14,7 @@
         android:layout_marginTop="8dp"
         android:text="Welcome back to your ACT journey!"
         android:textSize="20sp"
+        android:textColor="#FFFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,4 +32,5 @@
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 

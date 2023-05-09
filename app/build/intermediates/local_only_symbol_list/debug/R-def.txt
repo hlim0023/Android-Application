@@ -9,6 +9,8 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable calm_ocean
+drawable card_theme
 drawable ic_baseline_calendar_month_24
 drawable ic_baseline_home_24
 drawable ic_baseline_person_24

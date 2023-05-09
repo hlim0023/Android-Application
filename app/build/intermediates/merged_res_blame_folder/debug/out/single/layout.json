@@ -12,16 +12,12 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\event_cell.xml"
     },
     {
-        "merged": "com.example.Goalden.app-mergeDebugResources-32:/layout/home_activity.xml",
-        "source": "com.example.Goalden.app-main-35:/layout/home_activity.xml"
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-32:\\layout\\task_item.xml",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\task_item.xml"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-32:\\layout\\fragment_calendar.xml",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\fragment_calendar.xml"
-    },
-    {
-        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-32:\\layout\\task_item.xml",
-        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\task_item.xml"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-mergeDebugResources-32:\\layout\\fragment_settings.xml",

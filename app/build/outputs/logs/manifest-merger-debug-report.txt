@@ -130,7 +130,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\al
 	android:allowBackup
 		ADDED from C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:15:9-43
 	android:dataExtractionRules
 		ADDED from C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:8:9-65
 	tools:replace

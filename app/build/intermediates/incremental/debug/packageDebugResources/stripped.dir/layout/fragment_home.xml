@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:theme="@style/AppTheme">
-
+    android:theme="@style/AppTheme"
+    android:background="@drawable/calm_ocean">
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
@@ -14,6 +14,7 @@
         android:layout_marginTop="8dp"
         android:text="Welcome back to your ACT journey!"
         android:textSize="20sp"
+        android:textColor="#FFFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,24 +33,4 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    tools:context=".HomeFragment">-->
 
-<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
-
-<!--    <com.anychart.AnyChartView-->
-<!--        android:id="@+id/anyChartView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_marginVertical="20sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--</FrameLayout>-->

@@ -17,6 +17,7 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
+import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 import com.github.mikephil.charting.utils.ColorTemplate;
@@ -80,11 +81,11 @@ public class HomeFragment extends Fragment {
         dataSet.setValueTypeface(typeface);
         pieChart.setEntryLabelTypeface(typeface);
         pieChart.setData(data);
-        pieChart.getDescription().setEnabled(false);
-        pieChart.setUsePercentValues(true);
         pieChart.setHoleRadius(20f);
         pieChart.setTransparentCircleRadius(25f);
-        pieChart.animateXY(800, 800);
+        pieChart.animateXY(500, 500);
+        dataSet.setValueFormatter(new PercentFormatter(pieChart));
+        pieChart.setDrawEntryLabels(false);
         pieChart.invalidate();
 
         // Customize the legend
@@ -98,6 +99,9 @@ public class HomeFragment extends Fragment {
         legend.setYOffset(0f);
         legend.setTypeface(typeface);
         legend.setTextSize(14f);
+        legend.setTextColor(Color.WHITE);
+
+
         // Set a listener for when a value is selected
         pieChart.setOnChartValueSelectedListener(new OnChartValueSelectedListener() {
             @Override

@@ -4,10 +4,6 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\activity_calendar_view.xml"
     },
     {
-        "merged": "com.example.Goalden.app-merged_res-33:/layout_home_activity.xml.flat",
-        "source": "com.example.Goalden.app-main-35:/layout/home_activity.xml"
-    },
-    {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
@@ -80,6 +76,14 @@
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\fragment_home.xml"
     },
     {
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\drawable_background_overlay.xml.flat",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\drawable\\background_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\drawable_card_theme.xml.flat",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\drawable\\card_theme.xml"
+    },
+    {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -142,6 +146,10 @@
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\layout_task_layout.xml.flat",
         "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\layout\\task_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\drawable_calm_ocean.jpg.flat",
+        "source": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-main-35:\\drawable\\calm_ocean.jpg"
     },
     {
         "merged": "C:\\Users\\alext\\.gradle\\daemon\\7.5\\com.example.Goalden.app-merged_res-33:\\mipmap-hdpi_ic_launcher_foreground.png.flat",

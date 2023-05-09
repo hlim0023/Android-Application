@@ -29,6 +29,7 @@ public class UserInfo {
     private ArrayList<Activity> activities;
 
     public UserInfo( String userId, String name, String password) {
+        this.userId = userId;
         userName = name;
         userPassword = password;
         activities = new ArrayList<>();

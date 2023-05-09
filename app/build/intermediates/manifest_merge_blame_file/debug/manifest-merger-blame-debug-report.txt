@@ -53,8 +53,8 @@
 33        android:supportsRtl="true"
 33-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:13:9-35
 34        android:testOnly="true"
-35        android:theme="@style/AppTheme" >
-35-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:15:9-40
+35        android:theme="@style/Theme.Week2" >
+35-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:15:9-43
 36        <activity
 36-->C:\Users\alext\StudioProjects\androidproject\app\src\main\AndroidManifest.xml:19:9-21:40
 37            android:name="com.example.Goalden.DailyCalendarActivity"

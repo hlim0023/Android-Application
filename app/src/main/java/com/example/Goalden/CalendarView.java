@@ -60,13 +60,13 @@ public class CalendarView extends BaseActivity implements  CalendarAdapter.OnIte
         CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusMonths(1);
         setMonthView();
     }
-    public void onBackPressed() {
-        if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
-            getSupportFragmentManager().popBackStack();
-        } else {
-            replaceFragment(new HomeFragment());
-        }
-    }
+//    public void onBackPressed() {
+//        if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
+//            getSupportFragmentManager().popBackStack();
+//        } else {
+//            replaceFragment(new HomeFragment());
+//        }
+//    }
     @Override
     protected void onResume() {
         super.onResume();
