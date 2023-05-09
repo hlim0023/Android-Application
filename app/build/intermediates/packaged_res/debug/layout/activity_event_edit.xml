@@ -92,7 +92,8 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#BA68C8"/>
+        android:textAlignment="gravity"
+        android:popupBackground="#BA68C8"/>
 
     <Button
         android:layout_marginTop="20dp"
