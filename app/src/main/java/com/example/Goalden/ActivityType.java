@@ -5,5 +5,6 @@ public enum ActivityType {
     Acceptance,
     CognitiveDefusion,
     BeingPresent,
+    Values,
     SelfAsContext
 }

@@ -70,13 +70,17 @@ public class ProfileFragment extends Fragment {
 
         // Set the progress bar
         // Replace these values with the actual progress and maximum values
-        int userProgress = 40;
-        int maximumProgress = 100;
-
-        // Calculate the percentage
-        int progressPercentage = (userProgress * 100) / maximumProgress;
-        ProgressBar profileProgressBar = view.findViewById(R.id.goal_progress_bar);
-        profileProgressBar.setProgress(progressPercentage);
+//        int userProgress = 40;
+//        int maximumProgress = 100;
+//
+//        // Calculate the percentage
+//        int progressPercentage = (userProgress * 100) / maximumProgress;
+//        ProgressBar profileProgressBar = view.findViewById(R.id.goal_progress_bar1);
+//        profileProgressBar.setProgress(30);
+//        ProgressBar profileProgressBar2 = view.findViewById(R.id.goal_progress_bar2);
+//        profileProgressBar2.setProgress(progressPercentage);
+//        ProgressBar profileProgressBar3 = view.findViewById(R.id.goal_progress_bar3);
+//        profileProgressBar3.setProgress(60);
 
 //        Button settingsButton = view.findViewById(R.id.settings_button);
 //        settingsButton.setOnClickListener(new View.OnClickListener() {

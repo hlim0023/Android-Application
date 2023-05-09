@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -23,22 +24,49 @@ public final class FragmentProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView completedGoals;
+  public final TextView categoryTitle1;
 
   @NonNull
-  public final ProgressBar goalProgressBar;
+  public final TextView categoryTitle2;
 
   @NonNull
-  public final TextView inProgressGoals;
+  public final TextView categoryTitle3;
+
+  @NonNull
+  public final TextView categoryTitle4;
+
+  @NonNull
+  public final TextView categoryTitle5;
+
+  @NonNull
+  public final TextView categoryTitle6;
+
+  @NonNull
+  public final GridLayout gridLayout;
 
   @NonNull
   public final ImageView profilePicture;
 
   @NonNull
-  public final Button settingsButton;
+  public final ProgressBar progressBar1;
 
   @NonNull
-  public final TextView totalGoals;
+  public final ProgressBar progressBar2;
+
+  @NonNull
+  public final ProgressBar progressBar3;
+
+  @NonNull
+  public final ProgressBar progressBar4;
+
+  @NonNull
+  public final ProgressBar progressBar5;
+
+  @NonNull
+  public final ProgressBar progressBar6;
+
+  @NonNull
+  public final Button settingsButton;
 
   @NonNull
   public final TextView userEmail;
@@ -47,17 +75,30 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final TextView userName;
 
   private FragmentProfileBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView completedGoals, @NonNull ProgressBar goalProgressBar,
-      @NonNull TextView inProgressGoals, @NonNull ImageView profilePicture,
-      @NonNull Button settingsButton, @NonNull TextView totalGoals, @NonNull TextView userEmail,
-      @NonNull TextView userName) {
+      @NonNull TextView categoryTitle1, @NonNull TextView categoryTitle2,
+      @NonNull TextView categoryTitle3, @NonNull TextView categoryTitle4,
+      @NonNull TextView categoryTitle5, @NonNull TextView categoryTitle6,
+      @NonNull GridLayout gridLayout, @NonNull ImageView profilePicture,
+      @NonNull ProgressBar progressBar1, @NonNull ProgressBar progressBar2,
+      @NonNull ProgressBar progressBar3, @NonNull ProgressBar progressBar4,
+      @NonNull ProgressBar progressBar5, @NonNull ProgressBar progressBar6,
+      @NonNull Button settingsButton, @NonNull TextView userEmail, @NonNull TextView userName) {
     this.rootView = rootView;
-    this.completedGoals = completedGoals;
-    this.goalProgressBar = goalProgressBar;
-    this.inProgressGoals = inProgressGoals;
+    this.categoryTitle1 = categoryTitle1;
+    this.categoryTitle2 = categoryTitle2;
+    this.categoryTitle3 = categoryTitle3;
+    this.categoryTitle4 = categoryTitle4;
+    this.categoryTitle5 = categoryTitle5;
+    this.categoryTitle6 = categoryTitle6;
+    this.gridLayout = gridLayout;
     this.profilePicture = profilePicture;
+    this.progressBar1 = progressBar1;
+    this.progressBar2 = progressBar2;
+    this.progressBar3 = progressBar3;
+    this.progressBar4 = progressBar4;
+    this.progressBar5 = progressBar5;
+    this.progressBar6 = progressBar6;
     this.settingsButton = settingsButton;
-    this.totalGoals = totalGoals;
     this.userEmail = userEmail;
     this.userName = userName;
   }
@@ -89,21 +130,45 @@ public final class FragmentProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.completed_goals;
-      TextView completedGoals = ViewBindings.findChildViewById(rootView, id);
-      if (completedGoals == null) {
+      id = R.id.category_title_1;
+      TextView categoryTitle1 = ViewBindings.findChildViewById(rootView, id);
+      if (categoryTitle1 == null) {
         break missingId;
       }
 
-      id = R.id.goal_progress_bar;
-      ProgressBar goalProgressBar = ViewBindings.findChildViewById(rootView, id);
-      if (goalProgressBar == null) {
+      id = R.id.category_title_2;
+      TextView categoryTitle2 = ViewBindings.findChildViewById(rootView, id);
+      if (categoryTitle2 == null) {
         break missingId;
       }
 
-      id = R.id.in_progress_goals;
-      TextView inProgressGoals = ViewBindings.findChildViewById(rootView, id);
-      if (inProgressGoals == null) {
+      id = R.id.category_title_3;
+      TextView categoryTitle3 = ViewBindings.findChildViewById(rootView, id);
+      if (categoryTitle3 == null) {
+        break missingId;
+      }
+
+      id = R.id.category_title_4;
+      TextView categoryTitle4 = ViewBindings.findChildViewById(rootView, id);
+      if (categoryTitle4 == null) {
+        break missingId;
+      }
+
+      id = R.id.category_title_5;
+      TextView categoryTitle5 = ViewBindings.findChildViewById(rootView, id);
+      if (categoryTitle5 == null) {
+        break missingId;
+      }
+
+      id = R.id.category_title_6;
+      TextView categoryTitle6 = ViewBindings.findChildViewById(rootView, id);
+      if (categoryTitle6 == null) {
+        break missingId;
+      }
+
+      id = R.id.grid_layout;
+      GridLayout gridLayout = ViewBindings.findChildViewById(rootView, id);
+      if (gridLayout == null) {
         break missingId;
       }
 
@@ -113,15 +178,45 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.settings_button;
-      Button settingsButton = ViewBindings.findChildViewById(rootView, id);
-      if (settingsButton == null) {
+      id = R.id.progress_bar_1;
+      ProgressBar progressBar1 = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar1 == null) {
         break missingId;
       }
 
-      id = R.id.total_goals;
-      TextView totalGoals = ViewBindings.findChildViewById(rootView, id);
-      if (totalGoals == null) {
+      id = R.id.progress_bar_2;
+      ProgressBar progressBar2 = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar2 == null) {
+        break missingId;
+      }
+
+      id = R.id.progress_bar_3;
+      ProgressBar progressBar3 = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar3 == null) {
+        break missingId;
+      }
+
+      id = R.id.progress_bar_4;
+      ProgressBar progressBar4 = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar4 == null) {
+        break missingId;
+      }
+
+      id = R.id.progress_bar_5;
+      ProgressBar progressBar5 = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar5 == null) {
+        break missingId;
+      }
+
+      id = R.id.progress_bar_6;
+      ProgressBar progressBar6 = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar6 == null) {
+        break missingId;
+      }
+
+      id = R.id.settings_button;
+      Button settingsButton = ViewBindings.findChildViewById(rootView, id);
+      if (settingsButton == null) {
         break missingId;
       }
 
@@ -137,9 +232,10 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((ConstraintLayout) rootView, completedGoals,
-          goalProgressBar, inProgressGoals, profilePicture, settingsButton, totalGoals, userEmail,
-          userName);
+      return new FragmentProfileBinding((ConstraintLayout) rootView, categoryTitle1, categoryTitle2,
+          categoryTitle3, categoryTitle4, categoryTitle5, categoryTitle6, gridLayout,
+          profilePicture, progressBar1, progressBar2, progressBar3, progressBar4, progressBar5,
+          progressBar6, settingsButton, userEmail, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

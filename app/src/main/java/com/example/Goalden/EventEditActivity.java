@@ -115,12 +115,7 @@ public class EventEditActivity extends AppCompatActivity {
 
     public void saveActivityAction(View view) {
         String activityName = eventNameET.getText().toString();
-//        Activity activity = new Activity(
-//                activityName,
-//                LocalTime.parse(timeButton.getText().toString()),
-//                CalendarUtils.toDate(dateButton.getText().toString()),
-//                ActivityType.valueOf(mySpinner.getSelectedItem().toString())
-//        );
+
         String activityKey = myRef.child("activities").push().getKey();
         DatabaseReference act = myRef.child("activities").child(activityKey);
         HashMap<String, Object> keyValuePairs = new HashMap<>();
@@ -129,6 +124,15 @@ public class EventEditActivity extends AppCompatActivity {
         keyValuePairs.put("activityDate", dateButton.getText().toString());
         keyValuePairs.put("activityCategory", mySpinner.getSelectedItem().toString());
         act.setValue(keyValuePairs);
+
+        Activity activity = new Activity(
+                activityName,
+                LocalTime.parse(timeButton.getText().toString()),
+                CalendarUtils.toDate(dateButton.getText().toString()),
+                ActivityType.valueOf(mySpinner.getSelectedItem().toString())
+        );
+
+        UserInfo.loggedUser.addActivity(activity);
 //        act.child("activityName").setValue(activityName);
 //        act.child("activityTime").setValue(timeButton.getText().toString());
 //        act.child("activityDate").setValue(dateButton.getText().toString());

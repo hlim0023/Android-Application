@@ -37,8 +37,13 @@ id calendar_item
 id calendar_view_homeBtn
 id category_description
 id category_detail_card
+id category_title_1
+id category_title_2
+id category_title_3
+id category_title_4
+id category_title_5
+id category_title_6
 id cellDayText
-id completed_goals
 id datePickerButton
 id dateTV
 id dayOfWeekTV
@@ -48,7 +53,7 @@ id event2
 id event3
 id eventCellTV
 id eventListView
-id goal_progress_bar
+id grid_layout
 id guideline14
 id guideline15
 id guideline16
@@ -59,7 +64,6 @@ id guideline6
 id home_item
 id home_layout_frame
 id hourListView
-id in_progress_goals
 id monthDayText
 id monthYearTV
 id my_spinner
@@ -67,9 +71,15 @@ id parentView
 id pieChart
 id profile_item
 id profile_picture
+id progress_bar_1
+id progress_bar_2
+id progress_bar_3
+id progress_bar_4
+id progress_bar_5
+id progress_bar_6
 id settings_button
+id task_category
 id task_checkbox
-id task_description
 id task_due_date
 id task_title
 id tasksRecyclerView
@@ -82,7 +92,6 @@ id textView4
 id timeButton
 id timeTV
 id titleTextView
-id total_goals
 id user_email
 id user_name
 id weeklyViewFinishBtn

@@ -2974,6 +2974,12 @@ id cancel_button
 id carryVelocity
 id category_description
 id category_detail_card
+id category_title_1
+id category_title_2
+id category_title_3
+id category_title_4
+id category_title_5
+id category_title_6
 id cellDayText
 id center
 id centerCrop
@@ -2993,7 +2999,6 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
-id completed_goals
 id compress
 id confirm_button
 id constraint
@@ -3082,10 +3087,10 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
-id goal_progress_bar
 id gone
 id graph
 id graph_wrap
+id grid_layout
 id group_divider
 id grouping
 id groups
@@ -3113,7 +3118,6 @@ id ignore
 id ignoreRequest
 id image
 id immediateStop
-id in_progress_goals
 id included
 id indeterminate
 id info
@@ -3240,6 +3244,12 @@ id postLayout
 id pressed
 id profile_item
 id profile_picture
+id progress_bar_1
+id progress_bar_2
+id progress_bar_3
+id progress_bar_4
+id progress_bar_5
+id progress_bar_6
 id progress_circular
 id progress_horizontal
 id radio
@@ -3342,8 +3352,8 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id task_category
 id task_checkbox
-id task_description
 id task_due_date
 id task_title
 id tasksRecyclerView
@@ -3379,7 +3389,6 @@ id title_template
 id toggle
 id top
 id topPanel
-id total_goals
 id touch_outside
 id transitionToEnd
 id transitionToStart

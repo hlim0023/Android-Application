@@ -10,7 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
     private ArrayList<Activity> taskList;
@@ -30,7 +29,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Activity task = taskList.get(position);
         holder.taskTitle.setText(task.getName());
-        holder.taskDescription.setText(task.getDescription());
+        holder.taskCategory.setText(task.getType().toString());
 
     }
 
@@ -41,14 +40,14 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView taskTitle;
-        TextView taskDescription;
+        TextView taskCategory;
         TextView taskDueDate;
         CheckBox taskCheckbox;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             taskTitle = itemView.findViewById(R.id.task_title);
-            taskDescription = itemView.findViewById(R.id.task_description);
+            taskCategory = itemView.findViewById(R.id.task_category);
             taskCheckbox = itemView.findViewById(R.id.task_checkbox);
         }
     }

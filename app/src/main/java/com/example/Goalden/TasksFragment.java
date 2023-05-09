@@ -1,5 +1,6 @@
 package com.example.Goalden;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,9 +37,13 @@ public class TasksFragment extends Fragment {
 
         Button addTaskButton = view.findViewById(R.id.add_task_button);
         addTaskButton.setOnClickListener(v -> {
-            // Add new task logic here
+            CalendarUtils.selectedDate = LocalDate.now();
+            startActivity(new Intent(v.getContext(), EventEditActivity.class));
         });
 
         return view;
+    }
+    public void newActivityAction(View view) {
+        startActivity(new Intent(getActivity(), EventEditActivity.class));
     }
 }

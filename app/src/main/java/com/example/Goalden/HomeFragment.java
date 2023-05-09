@@ -48,12 +48,42 @@ public class HomeFragment extends Fragment {
 
     private void setupPieChart() {
         ArrayList<PieEntry> entries = new ArrayList<>();
-        entries.add(new PieEntry(25f, "Acceptance"));
-        entries.add(new PieEntry(15f, "Cognitive Defusion"));
-        entries.add(new PieEntry(35f, "Being Present"));
-        entries.add(new PieEntry(10f, "Self as Context"));
-        entries.add(new PieEntry(30f, "Values"));
-        entries.add(new PieEntry(20f, "Committed Action"));
+        int acceptanceCount= 0;
+        int cognitiveCount= 0;
+        int presentCount= 0;
+        int contextCount= 0;
+        int valuesCount= 0;
+        int actionCount= 0;
+        float total = 0;
+        for(Activity activity: UserInfo.loggedUser.getActivities()){
+            if(activity.getType() == ActivityType.Acceptance)
+                acceptanceCount += 1;
+            else if (activity.getType() == ActivityType.CognitiveDefusion)
+                cognitiveCount += 1;
+            else if (activity.getType() == ActivityType.BeingPresent)
+                presentCount += 1;
+            else if (activity.getType() == ActivityType.SelfAsContext)
+                contextCount += 1;
+            else if (activity.getType() == ActivityType.Values)
+                valuesCount += 1;
+            else if (activity.getType() == ActivityType.CommittedAction)
+                actionCount += 1;
+            total += 1;
+        }
+
+
+        if(acceptanceCount != 0)
+            entries.add(new PieEntry( acceptanceCount/total * 100, "Acceptance"));
+        if (cognitiveCount != 0)
+            entries.add(new PieEntry(cognitiveCount/total * 100, "Cognitive Defusion"));
+        if (presentCount != 0)
+            entries.add(new PieEntry(presentCount/total * 100, "Being Present"));
+        if (contextCount != 0)
+            entries.add(new PieEntry(contextCount/total * 100, "Self as Context"));
+        if (valuesCount != 0)
+            entries.add(new PieEntry(valuesCount/total * 100, "Values"));
+        if (actionCount != 0)
+            entries.add(new PieEntry(actionCount/total * 100, "Committed Action"));
 
         PieDataSet dataSet = new PieDataSet(entries, "");
         String[] categories = {"Acceptance", "Cognitive Defusion", "Being Present", "Self as Context", "Values", "Committed Action"};
